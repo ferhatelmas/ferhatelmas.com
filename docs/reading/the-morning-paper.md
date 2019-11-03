@@ -2,6 +2,21 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-01: [Optimized risk scores](https://blog.acolyer.org/2019/11/01/optimized-risk-scores/)
+
+- doing the simplest that would work is a good place to start
+- score based risk model: summation of points in multiple heuristics
+  - a good one: has small number of features with small coefficients
+  - core is the mixed-integer non-linear programming which is NP-Hard
+  - trick is cutting-plane algorithm, to solve the proxy problem with much less
+    data first and expand it, by cuts, it becomes linear and monotonically
+    approaches the actual one
+  - if loss function isn't non-convex, cutting-plane takes so much time
+    (stalls). Improved version splits the plane into disjoint partitions and
+    solves them separately
+- there is no need for complex model serving in production because models can
+  easily be implemented
+
 ## 2019-10-30: [Learning certifiably optimal rule lists for categorical data](https://blog.acolyer.org/2019/10/30/corels/)
 
 - a new optimal rule list algorithm
