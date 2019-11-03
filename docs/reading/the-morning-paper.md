@@ -2,6 +2,26 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-10-30: [Learning certifiably optimal rule lists for categorical data](https://blog.acolyer.org/2019/10/30/corels/)
+
+- a new optimal rule list algorithm
+  - why do we need a new one while we have decision trees?
+  - even if we're satisfied with the results, we don't know where the optimality
+    is and how optimum the end result is
+  - generated rule list: predictive, not causal so not good for policy making
+    but easy to follow the reasoning
+- best rule list:
+  - terms: loss (misclassification error) + regularization (longer list)
+  - extension of a prefix can't improve the rule list
+  - extension list of a non-accurate list can be pruned
+  - upper bound for optimum list can be computed so anything above it can be
+    pruned
+  - each rule in the optimum list should have a threshold in terms of accuracy
+- data structures in place to implement branch and bound algorithm:
+  - prefix trees for incremental expansion
+  - symmetry-aware map for pruning
+  - different queues for search traversal
+
 ## 2019-10-28: [Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead](https://blog.acolyer.org/2019/10/28/interpretable-models/)
 
 - explainability and interpretability are different
