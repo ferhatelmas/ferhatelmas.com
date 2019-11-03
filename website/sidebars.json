@@ -1,1 +1,6 @@
-{}
+{
+  "docs": {
+    "Start": ["index"],
+    "Reading": ["reading/books", "reading/the-morning-paper"]
+  }
+}

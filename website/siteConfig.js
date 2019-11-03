@@ -1,4 +1,4 @@
-const siteConfig = {
+module.exports = {
   title: 'ferhat elmas',
   tagline: 'passionate developer',
   url: 'https://ferhatelmas.com',
@@ -7,8 +7,9 @@ const siteConfig = {
   organizationName: 'ferhatelmas',
 
   headerLinks: [
-    { blog: true, label: 'Blog' },
     { search: true },
+    { doc: 'index', label: 'Knowledge Base' },
+    { blog: true, label: 'Blog' },
     { href: 'https://github.com/ferhatelmas', label: 'GitHub' }
   ],
 
@@ -32,13 +33,14 @@ const siteConfig = {
 
   onPageNav: 'separate',
   cleanUrl: true,
-  ogImage: 'img/undraw_online.svg',
-  twitterImage: 'img/undraw_tweetstorm.svg',
-
   docsSideNavCollapsible: true,
   enableUpdateBy: true,
   enableUpdateTime: true,
-  cname: 'ferhatelmas.com'
+  cname: 'ferhatelmas.com',
+  scrollToTop: true,
+  repoUrl: 'https://github.com/ferhatelmas/ferhatelmas.com',
+  algolia: {
+    apiKey: 'my-api-key',
+    indexName: 'my-index-name'
+  }
 }
-
-module.exports = siteConfig
