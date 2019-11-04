@@ -2,6 +2,19 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-04: [An analysis of performance evolution of Linux’s core operations](https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/)
+
+- headline: performance got worse or fluctuated
+  - main takeaway: tuning kernel is a difficult beast to handle
+  - tuning by distros takes 6-18 months while a new kernel is released every 2-3
+    months with 13-18k commits
+  - side takeaway: security has a cost
+- reasons of performance hits:
+  - security: spectre/meltdown/free space randomization/validation of pointers
+    to copy data between user and kernel space
+  - new features: transparent page size adaptation, cgroup memory controller
+  - default configuration changes
+
 ## 2019-11-01: [Optimized risk scores](https://blog.acolyer.org/2019/11/01/optimized-risk-scores/)
 
 - doing the simplest that would work is a good place to start
