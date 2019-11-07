@@ -2,6 +2,35 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-06: [File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution](https://blog.acolyer.org/2019/11/06/ceph-evolution/)
+
+- a good example of questioning assumptions: distributed storage backend must be
+  on top of local file system
+  - result of it is blue store and changed storage hardware landscape
+- distributed file system: holistic view over multiple storage nodes
+  - expected features: high bandwidth, horizontal scalability, fault tolerance
+    and strong consistency
+- changing hardware landscape: zone interface
+  - sequential writes on static size blocks
+  - causes log-structured, copy-on-write design
+  - however, it's against the style of many file system designs
+- it takes a decade (on average) for file systems to mature enough
+- iteratons:
+  - user-space file system: extent and B-tree based
+  - btrfs: transaction, deduplication, checksum, compression
+  - xfs: better scalability and metadata performance
+  - ext4
+  - zfs
+- challenges:
+  - fast transactions: hook into fs (no support), logical WAL in user-space
+    (slow and double write), use RocksDB (low performance due to frequent
+    flushes)
+  - fast metadata
+  - extensibility for new hardware
+- next level challenge:
+  - resizable user space cache
+  - high CPU on serialization so no custom sharding
+
 ## 2019-11-04: [An analysis of performance evolution of Linux’s core operations](https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/)
 
 - headline: performance got worse or fluctuated
