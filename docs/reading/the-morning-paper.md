@@ -2,6 +2,13 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-08: [The inflection point hypothesis: a principled approach to finding the root cause of a failure](https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/)
+
+- root cause analysis: start from the beginning of execution and spot divergence
+  from the expected execution: that point is the inflection point and likely the
+  root cause.
+- root cause: the simplest explanation of unwanted condition.
+
 ## 2019-11-06: [File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution](https://blog.acolyer.org/2019/11/06/ceph-evolution/)
 
 - a good example of questioning assumptions: distributed storage backend must be
