@@ -1,6 +1,7 @@
 {
   "docs": {
     "Start": ["index"],
-    "Reading": ["reading/books", "reading/the-morning-paper"]
+    "Reading": ["reading/books", "reading/the-morning-paper"],
+    "Language": ["vocabulary", "sayings"]
   }
 }
