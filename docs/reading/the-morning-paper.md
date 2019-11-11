@@ -2,6 +2,39 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-11: [Snap: a microkernel approach to host networking](https://blog.acolyer.org/2019/11/11/snap-networking/)
+
+- TCP/IP is ditched and started from scratch to have more efficient interfaces,
+  architecture and protocol
+  - provides reliability, congestion control, optional ordering, flow control
+    and execution of remote data operations
+- guiding principles:
+  - CPU efficiency
+  - lower latency (tail too)
+  - faster iteration and regular upgrades (from 1-2 months to 1 week)
+- library implementation isn't an option
+  - since deployment of snap requires deployment of all applications depending
+    on it
+  - so user-space microkernel
+  - applications talk to it via shared memory
+- architecture leverages:
+  - user-space networking
+  - in-service upgrades
+  - centralized resource accounting
+  - programmable packet processing
+  - kernel-bypass
+  - RDMA functionality
+  - optimized transport, congestion control and routing
+- upgrade:
+  - brownout: bring new snap that shares the memory with old snap
+  - blackout: swap to new snap
+- scheduling:
+  - dedicated core
+  - spreading: assign to a core if active
+  - compacting: squeeze to minimal number of cores
+- client applications can poll the completion results or register notification
+  callbacks
+
 ## 2019-11-08: [The inflection point hypothesis: a principled approach to finding the root cause of a failure](https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/)
 
 - root cause analysis: start from the beginning of execution and spot divergence
