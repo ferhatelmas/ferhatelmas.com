@@ -2,6 +2,34 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-13: [Scaling symbolic evaluation for automated verification of systems code with Serval](https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/)
+
+- Google low-level networking stack development goals:
+  - fast iteration
+  - early feedback and detection of the problems
+- However, formal verification still has its place to prevent problem classes
+  - proofs are costly in terms of time and amount (longer than actual
+    implemetantion)
+- There might likely be multiple iterations/rewrites of a software
+  - investigation implementation
+  - sketching out learnings
+  - cleanup version
+- the goal here is that if we could reduce the cost of producing a proof, it
+  would be used in many more times (specification is still needed though)
+  - some constraints are neede for an automated system such as finite operations
+    for bounded searches
+- Symbolic evaluation: program execution search with example input (symbolic)
+  instead of real inputs
+- User compiles the program and writes a specification (in
+  [rosette](https://docs.racket-lang.org/rosette-guide/index.html)) then
+  verifier (an intepreter) produces symbolic constraints and runs the binary to
+  check if the program behaves as expected and generates an example on failure.
+  - normally symbolic constraint generation step is very costly but serval
+    framework has some optimizations to help for general use such as split-pc,
+    split input into more granular inputs and test them separately then
+    collect/merge results back
+- concurrent verification isn't supported (obviously it's hard)
+
 ## 2019-11-11: [Snap: a microkernel approach to host networking](https://blog.acolyer.org/2019/11/11/snap-networking/)
 
 - TCP/IP is ditched and started from scratch to have more efficient interfaces,
