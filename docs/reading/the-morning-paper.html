@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Morning Paper Notes · ferhat elmas</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 2019-11-11: [Snap: a microkernel approach to host networking](https://blog.acolyer.org/2019/11/11/snap-networking/)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="The Morning Paper Notes · ferhat elmas"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ferhatelmas.com/"/><meta property="og:description" content="## 2019-11-11: [Snap: a microkernel approach to host networking](https://blog.acolyer.org/2019/11/11/snap-networking/)"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ferhatelmas.com/blog/atom.xml" title="ferhat elmas Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ferhatelmas.com/blog/feed.xml" title="ferhat elmas Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Morning Paper Notes · ferhat elmas</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 2019-11-15: [Taiji: managing global user traffic for large-scale Internet services at the edge](https://blog.acolyer.org/2019/11/15/facebook-taiji/)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="The Morning Paper Notes · ferhat elmas"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ferhatelmas.com/"/><meta property="og:description" content="## 2019-11-15: [Taiji: managing global user traffic for large-scale Internet services at the edge](https://blog.acolyer.org/2019/11/15/facebook-taiji/)"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ferhatelmas.com/blog/atom.xml" title="ferhat elmas Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ferhatelmas.com/blog/feed.xml" title="ferhat elmas Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
             {"zIndex":100}
@@ -60,7 +60,85 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">The Morning Paper Notes</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="2019-11-11-snap-a-microkernel-approach-to-host-networking-https-blogacolyerorg-2019-11-11-snap-networking"></a><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking-https-blogacolyerorg-2019-11-11-snap-networking" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></h2>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">The Morning Paper Notes</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="2019-11-15-taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge-https-blogacolyerorg-2019-11-15-facebook-taiji"></a><a href="#2019-11-15-taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge-https-blogacolyerorg-2019-11-15-facebook-taiji" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-11-15: <a href="https://blog.acolyer.org/2019/11/15/facebook-taiji/">Taiji: managing global user traffic for large-scale Internet services at the edge</a></h2>
+<ul>
+<li>which datacenter should answer the request?
+<ul>
+<li>taiji doesn't care about backend capacity since it's overly provisioned</li>
+<li>considerations:
+<ul>
+<li>sticky sessions</li>
+<li>dynamic traffic patterns; static mapping causes non-uniform usage</li>
+<li>tolerate failures in a data center</li>
+</ul></li>
+</ul></li>
+<li>first idea is to use consistent hashing
+<ul>
+<li>users look for similar content: enter social hashing
+<ul>
+<li>friend relationships are partitioned weekly and put into a balanced tree,
+then same buckets go to the same data center</li>
+</ul></li>
+</ul></li>
+<li>components:
+<ul>
+<li>runtime: percentage of the traffic to each data center
+<ul>
+<li>sampling per second for stateless, stick sessions for stateful</li>
+<li>policy, latency and utilization guarding</li>
+<li>generates: data center fraction</li>
+</ul></li>
+<li>pipeline: connection-aware granular control
+<ul>
+<li>generates: bucket fractions by using data center traffic fractions</li>
+</ul></li>
+</ul></li>
+<li>there are some safety checks:
+<ul>
+<li>no big jump in utilization</li>
+<li>no oscilations under 1%</li>
+<li>dampening the changes</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-11-13-scaling-symbolic-evaluation-for-automated-verification-of-systems-code-with-serval-https-blogacolyerorg-2019-11-13-scaling-symbolic-evaluation-serval"></a><a href="#2019-11-13-scaling-symbolic-evaluation-for-automated-verification-of-systems-code-with-serval-https-blogacolyerorg-2019-11-13-scaling-symbolic-evaluation-serval" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-11-13: <a href="https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/">Scaling symbolic evaluation for automated verification of systems code with Serval</a></h2>
+<ul>
+<li>Google low-level networking stack development goals:
+<ul>
+<li>fast iteration</li>
+<li>early feedback and detection of the problems</li>
+</ul></li>
+<li>However, formal verification still has its place to prevent problem classes
+<ul>
+<li>proofs are costly in terms of time and amount (longer than actual
+implemetantion)</li>
+</ul></li>
+<li>There might likely be multiple iterations/rewrites of a software
+<ul>
+<li>investigation implementation</li>
+<li>sketching out learnings</li>
+<li>cleanup version</li>
+</ul></li>
+<li>the goal here is that if we could reduce the cost of producing a proof, it
+would be used in many more times (specification is still needed though)
+<ul>
+<li>some constraints are neede for an automated system such as finite operations
+for bounded searches</li>
+</ul></li>
+<li>Symbolic evaluation: program execution search with example input (symbolic)
+instead of real inputs</li>
+<li>User compiles the program and writes a specification (in
+<a href="https://docs.racket-lang.org/rosette-guide/index.html">rosette</a>) then
+verifier (an intepreter) produces symbolic constraints and runs the binary to
+check if the program behaves as expected and generates an example on failure.
+<ul>
+<li>normally symbolic constraint generation step is very costly but serval
+framework has some optimizations to help for general use such as split-pc,
+split input into more granular inputs and test them separately then
+collect/merge results back</li>
+</ul></li>
+<li>concurrent verification isn't supported (obviously it's hard)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-11-11-snap-a-microkernel-approach-to-host-networking-https-blogacolyerorg-2019-11-11-snap-networking"></a><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking-https-blogacolyerorg-2019-11-11-snap-networking" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></h2>
 <ul>
 <li>TCP/IP is ditched and started from scratch to have more efficient interfaces,
 architecture and protocol
@@ -290,7 +368,7 @@ in aggregates
 <li>bar or table: to provide data for general exploration</li>
 </ul></li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 11/11/2019 by ferhat elmas</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/reading/books"><span class="arrow-prev">← </span><span>Books</span></a><a class="docs-next button" href="/docs/lang/vocabulary"><span>Vocabulary</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking">2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></a></li><li><a href="#2019-11-08-the-inflection-point-hypothesis-a-principled-approach-to-finding-the-root-cause-of-a-failure">2019-11-08: <a href="https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/">The inflection point hypothesis: a principled approach to finding the root cause of a failure</a></a></li><li><a href="#2019-11-06-file-systems-unfit-as-distributed-storage-backends-lessons-from-ten-years-of-ceph-evolution">2019-11-06: <a href="https://blog.acolyer.org/2019/11/06/ceph-evolution/">File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution</a></a></li><li><a href="#2019-11-04-an-analysis-of-performance-evolution-of-linuxs-core-operations">2019-11-04: <a href="https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/">An analysis of performance evolution of Linux’s core operations</a></a></li><li><a href="#2019-11-01-optimized-risk-scores">2019-11-01: <a href="https://blog.acolyer.org/2019/11/01/optimized-risk-scores/">Optimized risk scores</a></a></li><li><a href="#2019-10-30-learning-certifiably-optimal-rule-lists-for-categorical-data">2019-10-30: <a href="https://blog.acolyer.org/2019/10/30/corels/">Learning certifiably optimal rule lists for categorical data</a></a></li><li><a href="#2019-10-28-stop-explaining-black-box-machine-learning-models-for-high-stakes-decisions-and-use-interpretable-models-instead">2019-10-28: <a href="https://blog.acolyer.org/2019/10/28/interpretable-models/">Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead</a></a></li><li><a href="#2019-10-25-task-based-effectiveness-of-basic-visualizations">2019-10-25: <a href="https://blog.acolyer.org/2019/10/25/task-based-effectiveness-of-basic-visualizations/">Task-based effectiveness of basic visualizations</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 ferhat elmas</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 11/16/2019 by ferhat elmas</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/reading/books"><span class="arrow-prev">← </span><span>Books</span></a><a class="docs-next button" href="/docs/lang/vocabulary"><span>Vocabulary</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#2019-11-15-taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge">2019-11-15: <a href="https://blog.acolyer.org/2019/11/15/facebook-taiji/">Taiji: managing global user traffic for large-scale Internet services at the edge</a></a></li><li><a href="#2019-11-13-scaling-symbolic-evaluation-for-automated-verification-of-systems-code-with-serval">2019-11-13: <a href="https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/">Scaling symbolic evaluation for automated verification of systems code with Serval</a></a></li><li><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking">2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></a></li><li><a href="#2019-11-08-the-inflection-point-hypothesis-a-principled-approach-to-finding-the-root-cause-of-a-failure">2019-11-08: <a href="https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/">The inflection point hypothesis: a principled approach to finding the root cause of a failure</a></a></li><li><a href="#2019-11-06-file-systems-unfit-as-distributed-storage-backends-lessons-from-ten-years-of-ceph-evolution">2019-11-06: <a href="https://blog.acolyer.org/2019/11/06/ceph-evolution/">File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution</a></a></li><li><a href="#2019-11-04-an-analysis-of-performance-evolution-of-linuxs-core-operations">2019-11-04: <a href="https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/">An analysis of performance evolution of Linux’s core operations</a></a></li><li><a href="#2019-11-01-optimized-risk-scores">2019-11-01: <a href="https://blog.acolyer.org/2019/11/01/optimized-risk-scores/">Optimized risk scores</a></a></li><li><a href="#2019-10-30-learning-certifiably-optimal-rule-lists-for-categorical-data">2019-10-30: <a href="https://blog.acolyer.org/2019/10/30/corels/">Learning certifiably optimal rule lists for categorical data</a></a></li><li><a href="#2019-10-28-stop-explaining-black-box-machine-learning-models-for-high-stakes-decisions-and-use-interpretable-models-instead">2019-10-28: <a href="https://blog.acolyer.org/2019/10/28/interpretable-models/">Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead</a></a></li><li><a href="#2019-10-25-task-based-effectiveness-of-basic-visualizations">2019-10-25: <a href="https://blog.acolyer.org/2019/10/25/task-based-effectiveness-of-basic-visualizations/">Task-based effectiveness of basic visualizations</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 ferhat elmas</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
