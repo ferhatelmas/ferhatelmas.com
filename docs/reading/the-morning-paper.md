@@ -2,6 +2,30 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-15: [Taiji: managing global user traffic for large-scale Internet services at the edge](https://blog.acolyer.org/2019/11/15/facebook-taiji/)
+
+- which datacenter should answer the request?
+  - taiji doesn't care about backend capacity since it's overly provisioned
+  - considerations:
+    - sticky sessions
+    - dynamic traffic patterns; static mapping causes non-uniform usage
+    - tolerate failures in a data center
+- first idea is to use consistent hashing
+  - users look for similar content: enter social hashing
+    - friend relationships are partitioned weekly and put into a balanced tree,
+      then same buckets go to the same data center
+- components:
+  - runtime: percentage of the traffic to each data center
+    - sampling per second for stateless, stick sessions for stateful
+    - policy, latency and utilization guarding
+    - generates: data center fraction
+  - pipeline: connection-aware granular control
+    - generates: bucket fractions by using data center traffic fractions
+- there are some safety checks:
+  - no big jump in utilization
+  - no oscilations under 1%
+  - dampening the changes
+
 ## 2019-11-13: [Scaling symbolic evaluation for automated verification of systems code with Serval](https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/)
 
 - Google low-level networking stack development goals:
