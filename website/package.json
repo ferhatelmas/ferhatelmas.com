@@ -4,6 +4,7 @@
     "start": "docusaurus-start",
     "build": "docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",
+    "deploy": "GIT_USER=ferhatelmas USE_SSH=true yarn publish-gh-pages",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version"
