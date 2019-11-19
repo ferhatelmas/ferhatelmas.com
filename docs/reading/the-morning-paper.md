@@ -2,6 +2,23 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-18: [Formal foundations of serverless computing](https://blog.acolyer.org/2019/11/18/formal-foundations-of-serverless-computing/)
+
+- pecularities of serverless:
+  - warm start: functions are reused (any state is bad, can leak data)
+  - abrupt stop
+  - side-effects (at-least once run semantics)
+- serverless platform:
+  - init (initialize the state)
+  - recv (handle the request)
+  - step (items to be processed that are produced by function execution - so far
+    it's only return and generally done outside of serverless platform)
+- authors develop naive semantics and propose safety equivalence
+  - so that with basic semantics, even if code is running in full system,
+    execution can be reasoned
+- authors also developed an abstraction library that makes function composition
+  simpler compared to public-cloud implementations
+
 ## 2019-11-15: [Taiji: managing global user traffic for large-scale Internet services at the edge](https://blog.acolyer.org/2019/11/15/facebook-taiji/)
 
 - which datacenter should answer the request?
