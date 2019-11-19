@@ -3,6 +3,7 @@
     "Start": ["index"],
     "Reading": ["reading/books", "reading/the-morning-paper"],
     "Language": ["lang/vocabulary", "lang/sayings"],
-    "Machine learning": ["ml/time-series"]
+    "Machine learning": ["ml/time-series"],
+    "Tools": ["tools/install"]
   }
 }
