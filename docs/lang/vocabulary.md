@@ -5,7 +5,7 @@ title: Vocabulary
 Some interesting words that are good to know
 
 - fichu: a triangular scarf to cover the neck and the chest
-- grace note: finishng touch (figuratively)
+- grace note: finishing touch (figuratively)
 - mentalese: a language in which thoughts aren't verbalized but conceptualized
   in mind
 - ordure: something regarded as contaminating or perveting the morals
