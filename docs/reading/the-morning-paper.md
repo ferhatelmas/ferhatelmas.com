@@ -2,6 +2,29 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-20: [Local-first software: you own your data, in spite of the cloud](https://blog.acolyer.org/2019/11/20/local-first-software/)
+
+- Users don't have the ownership of the data with cloud apps. Moreover, pricing
+  and product might change in the disadvantage of the users
+- Local-first: retain the ownership but also have capabilities of easy access
+  and sharing
+- principles:
+  - fast
+  - multiple device
+  - offline
+  - collaboration
+  - longevity
+  - privacy
+  - user control
+- Challenge is the keeping the history of changes and doing necessary log
+  compaction
+- What can be done today?
+  - Aggresive caching and syncing
+  - Offline (progressive web apps)
+  - Standard data formats and be explicit of what data is collected and where
+    it's stored
+- Firebase for CRDTs is a market to investigate for entrepreneurs
+
 ## 2019-11-18: [Formal foundations of serverless computing](https://blog.acolyer.org/2019/11/18/formal-foundations-of-serverless-computing/)
 
 - pecularities of serverless:
