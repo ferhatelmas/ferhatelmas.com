@@ -2,6 +2,19 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-22: [PlanAlyzer: assessing threats to the validity of online experiments](https://blog.acolyer.org/2019/11/22/planalyzer/)
+
+- A linter for planout language, to develop online experiments
+  - internal validity, failures of randomization and treatment assignment and
+    enough causal inference
+  - Planout provides randomized values to test significance
+  - Planout is chosen by users because it makes mapping users to experiments
+    easier
+- Validity issues:
+  - selection bias
+  - confounding: variables that the reason and the outcome
+  - lack of positivity: no examples
+
 ## 2019-11-20: [Local-first software: you own your data, in spite of the cloud](https://blog.acolyer.org/2019/11/20/local-first-software/)
 
 - Users don't have the ownership of the data with cloud apps. Moreover, pricing
