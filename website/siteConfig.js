@@ -22,7 +22,7 @@ module.exports = {
     secondaryColor: '#3e3a27'
   },
 
-  copyright: `Copyright © ${new Date().getFullYear()} ferhat elmas`,
+  copyright: `${new Date().getFullYear()} ferhat elmas`,
 
   highlight: {
     theme: 'default'
