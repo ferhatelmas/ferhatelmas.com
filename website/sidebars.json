@@ -4,6 +4,6 @@
     "Reading": ["reading/books", "reading/the-morning-paper"],
     "Language": ["lang/vocabulary", "lang/sayings"],
     "Machine learning": ["ml/time-series"],
-    "Tools": ["tools/install"]
+    "Tools": ["tools/install", "tools/tips"]
   }
 }
