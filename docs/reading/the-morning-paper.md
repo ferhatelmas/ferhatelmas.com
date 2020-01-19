@@ -2,6 +2,23 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-13: [Challenges of real-world reinforcement learning](https://blog.acolyer.org/2020/01/13/challenges-of-real-world-rl/)
+
+- simulation and real system are very different
+  - security/safety is very important
+  - real-world data is needed
+- challenges:
+  - offline learning (i.e. from logs) - warm start, importance sampling, etc.
+  - fast online learning with sampling - data efficiency: accuracy threshold vs
+    needed data sampling
+  - high dimensions and continuous space
+  - safety - a bounded learning or a layer that prevents unwanted actions
+  - partially seen - should also train to learn noise and delay
+  - not perfect reward functions - not a clear goal to optimise
+  - easy explanation/interpretation
+  - fast inference
+  - tolerance of delays in hardware components for reward - need of a memory
+
 ## 2020-01-10: [Ten challenges for making automation a ‘team player’ in joint human-agent activity](https://blog.acolyer.org/2020/01/10/ten-challenges-for-automation/)
 
 - requirements for coordination of a group, people and machines
