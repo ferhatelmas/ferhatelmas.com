@@ -2,6 +2,16 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-12-06: [Benchmarking spreadsheet systems](https://blog.acolyer.org/2019/12/06/benchmarking-spreadsheet-systems/)
+
+- when spreadsheets were built, target was for human input but today we have
+  more and more data
+  - benchmarks: basic operations to decide complexity and room for improvement
+    (index, incremental updates, etc.)
+- result: they are far from basic usability and doesn't use any ideas from dbs
+  - using a db backend and transparemtly translating operations to SQL might be
+    good for a new plethora of spreadsheets
+
 ## 2019-12-04: [Declarative assembly of web applications from pre-defined concepts](https://blog.acolyer.org/2019/12/04/declarative-assembly-of-web-applications-from-pre-defined-concepts/)
 
 - open source use is increasing (right now around 50-70%)
