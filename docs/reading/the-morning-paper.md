@@ -2,6 +2,22 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-12-09: [A persistent problem: managing pointers in NVM](https://blog.acolyer.org/2019/12/09/a-persistent-problem/)
+
+- byte-addressable NVM will change
+  - how hardware is interacted
+  - the operation system design
+  - the way applications operate on data
+- assumptions for NVM:
+  - fast
+  - avoid serialization: in-memory data structure is put directly into the disk
+  - pointer logic: they point virtual memory locations
+- cache the objects, not the cache lines (128 bits provide plenty of space)
+  - in a global address space, fields are offset from the main object pointer
+  - object structure becomes public so application developer should handle it
+  - kernel interferes only on permission changes to set access control
+  - result: improves programmability and security without any overhead
+
 ## 2019-12-06: [Benchmarking spreadsheet systems](https://blog.acolyer.org/2019/12/06/benchmarking-spreadsheet-systems/)
 
 - when spreadsheets were built, target was for human input but today we have
