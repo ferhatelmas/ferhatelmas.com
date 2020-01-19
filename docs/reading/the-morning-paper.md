@@ -2,6 +2,19 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-12-02: [Efficient lock-free durable sets](https://blog.acolyer.org/2019/12/02/efficient-lock-free-durable-sets/)
+
+- non-volatile memory doesn't guarantee durability by itself
+  - cache and registers are still volatile
+  - for performance, operation can be reordered
+  - a log is needed
+- main idea: data is durable but pointers are not
+  - pointers are recoverable but slow
+- implementation:
+  - link-free: two bits; valid and deleted. Check NVRAM before returning.
+  - soft: three bits in non-volatile nodes and volatile nodes keep track the
+    state of inserted, deleted, to be inserted, to be deleted
+
 ## 2019-11-29: [TLA+ model checking made symbolic](https://blog.acolyer.org/2019/11/29/tla-model-checking-made-symbolic/)
 
 - convert transitions to quantifier-free SMT constraints to leverage SMT solvers
