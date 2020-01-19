@@ -2,6 +2,16 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-12-04: [Declarative assembly of web applications from pre-defined concepts](https://blog.acolyer.org/2019/12/04/declarative-assembly-of-web-applications-from-pre-defined-concepts/)
+
+- open source use is increasing (right now around 50-70%)
+- there are microservices that can be pulled, called concepts
+  - interesting bit is coordinating them with a declarative configuration
+- problems:
+  - custom behavior
+  - limited reuse and not clear time savings
+  - curation of catalog
+
 ## 2019-12-02: [Efficient lock-free durable sets](https://blog.acolyer.org/2019/12/02/efficient-lock-free-durable-sets/)
 
 - non-volatile memory doesn't guarantee durability by itself
