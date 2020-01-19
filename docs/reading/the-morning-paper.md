@@ -2,6 +2,15 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-29: [TLA+ model checking made symbolic](https://blog.acolyer.org/2019/11/29/tla-model-checking-made-symbolic/)
+
+- convert transitions to quantifier-free SMT constraints to leverage SMT solvers
+  - while TLC is hammered, this approach is still fast
+  - especially, constraints don't hold, TLC times out but this method gives real
+    fast feedback
+  - Paxos and Raft are still hard to get a good performance
+  - kind of clear winner for inductive variants (APALACHE)
+
 ## 2019-11-27: [Mergeable replicated data types – Part II](https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/)
 
 - the method so far:
