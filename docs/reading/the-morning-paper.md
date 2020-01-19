@@ -2,6 +2,18 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-12-13: [How do committees invent?](https://blog.acolyer.org/2019/12/13/how-do-committees-invent/)
+
+- design: intellectual activity which creates a whole from moving/diverse pieces
+- requirements:
+  - system boundaries: what is in the scope?
+  - notion of organization
+- as soon as team is chosen, everybody takes a part which is narrower in scope
+  - it creates the coordination problem
+  - vital for unified system in the end
+- adding more people constrain the options of possible designs
+  - homomorphism between team communication and their design
+
 ## 2019-12-11: [A tale of two abstractions: the case for object space](https://blog.acolyer.org/2019/12/11/a-tale-of-two-abstractions/)
 
 - the problem: non-volatile pointers
