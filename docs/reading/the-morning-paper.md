@@ -2,6 +2,17 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-15: [Programmatically interpretable reinforcement learning](https://blog.acolyer.org/2020/01/15/programmatically-interpretable-reinforcement-learning/)
+
+- pattern: a language and rules
+  - use machine learning to learn rules in this language which are easy to
+    explain by definition
+  - drawback: a lot of programs will be generated where some of them are
+    obviously wrong. Then, input augmentation is needed by human to continue
+    which acts like an oracle
+- it opens the door to prune some policies since some rewards won't be
+  satisfied, which are easy to verify
+
 ## 2020-01-13: [Challenges of real-world reinforcement learning](https://blog.acolyer.org/2020/01/13/challenges-of-real-world-rl/)
 
 - simulation and real system are very different
