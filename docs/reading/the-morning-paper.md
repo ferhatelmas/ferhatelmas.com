@@ -2,6 +2,14 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-10: [Ten challenges for making automation a ‘team player’ in joint human-agent activity](https://blog.acolyer.org/2020/01/10/ten-challenges-for-automation/)
+
+- requirements for coordination of a group, people and machines
+  - agree to work together
+  - mutually predictable: planning
+  - mutually directable: influence positively
+  - common ground: knowledge and beliefs
+
 ## 2020-01-08: [Ironies of automation](https://blog.acolyer.org/2020/01/08/ironies-of-automation/)
 
 - combination of pieces results the opposite of the expected (simpson's paradox)
