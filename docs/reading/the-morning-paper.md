@@ -2,6 +2,14 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-17: [Synthesizing data structure transformations from input-output examples](https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/)
+
+- functional languages are well suited for program synthesis
+- goal: to generate a program from example inductively
+  - not any program but the most cost effective
+  - memorization isn't something wanted but if examples are exhaustive, fine
+    though
+
 ## 2020-01-15: [Programmatically interpretable reinforcement learning](https://blog.acolyer.org/2020/01/15/programmatically-interpretable-reinforcement-learning/)
 
 - pattern: a language and rules
