@@ -2,6 +2,39 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-11-27: [Mergeable replicated data types – Part II](https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/)
+
+- the method so far:
+  - take the difference between each version and LCA, add those differences to
+    LCA state
+  - not enough
+  - given a merge function for a data type, a merge for pairs of that data type
+    can be derived
+- real implementation: Quark
+  - data structures (list, binary tree, etc.)
+  - compiler extension to automatically generate merge functions
+  - content-addressable storage abstraction; it answers the following questions
+    - how to efficiently get LCA for two concurrent versions?
+    - how/when to garbage collect LCA?
+
+## 2019-11-25: [Mergeable replicated data types – Part I](https://blog.acolyer.org/2019/11/25/mergeable-replicated-data-types-part-i/)
+
+- Mergeable replicated data types: similar to CRDTs but also easily composable
+  (little effort on dev).
+  - useful for geo-distributed systems and local-first applications
+- As always, goal is operate locally and coordinate globally and minimize it
+- Guiding ideas:
+  - data structures are aware of replication
+  - there is explicit concurrent revision strategy (create or sync)
+  - spec comes first than implementation
+- goal of the paper is that automatically extract merge operations (3-way merge;
+  2 concurrent versions and their lowest common ancestor - that's why it doesn't
+  guarantee linearizability)
+  - they do this transforming into relational domain and executing specification
+    there and translating the result back to the actual domain (however, further
+    specification might be needed such as loss of order which needs to be
+    defined)
+
 ## 2019-11-22: [PlanAlyzer: assessing threats to the validity of online experiments](https://blog.acolyer.org/2019/11/22/planalyzer/)
 
 - A linter for planout language, to develop online experiments
