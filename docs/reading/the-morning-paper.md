@@ -2,6 +2,17 @@
 title: The Morning Paper Notes
 ---
 
+## 2019-12-11: [A tale of two abstractions: the case for object space](https://blog.acolyer.org/2019/12/11/a-tale-of-two-abstractions/)
+
+- the problem: non-volatile pointers
+  - global addressing after processes end and integration of existing hardware
+    and interoperability of different memory hierarchies
+  - kind of object storage (ZODB in python)
+- idea: virtual address space to logical address space which is composed of
+  chunks, that are mapped to physical memory
+  - that's why two level indirection
+  - cost is around ~0.4ns
+
 ## 2019-12-09: [A persistent problem: managing pointers in NVM](https://blog.acolyer.org/2019/12/09/a-persistent-problem/)
 
 - byte-addressable NVM will change
