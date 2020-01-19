@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Morning Paper Notes · ferhat elmas</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 2019-11-27: [Mergeable replicated data types – Part II](https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="The Morning Paper Notes · ferhat elmas"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ferhatelmas.com/"/><meta property="og:description" content="## 2019-11-27: [Mergeable replicated data types – Part II](https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/)"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ferhatelmas.com/blog/atom.xml" title="ferhat elmas Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ferhatelmas.com/blog/feed.xml" title="ferhat elmas Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Morning Paper Notes · ferhat elmas</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 2020-01-17: [Synthesizing data structure transformations from input-output examples](https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="The Morning Paper Notes · ferhat elmas"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ferhatelmas.com/"/><meta property="og:description" content="## 2020-01-17: [Synthesizing data structure transformations from input-output examples](https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/)"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ferhatelmas.com/blog/atom.xml" title="ferhat elmas Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ferhatelmas.com/blog/feed.xml" title="ferhat elmas Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
             {"zIndex":100}
@@ -60,7 +60,194 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">The Morning Paper Notes</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="2019-11-27-mergeable-replicated-data-types-part-ii-https-blogacolyerorg-2019-11-27-mergeable-replicated-data-types-part-ii"></a><a href="#2019-11-27-mergeable-replicated-data-types-part-ii-https-blogacolyerorg-2019-11-27-mergeable-replicated-data-types-part-ii" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-11-27: <a href="https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/">Mergeable replicated data types – Part II</a></h2>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">The Morning Paper Notes</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples-https-blogacolyerorg-2020-01-17-synthesizing-data-structure-transformations"></a><a href="#2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples-https-blogacolyerorg-2020-01-17-synthesizing-data-structure-transformations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-17: <a href="https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/">Synthesizing data structure transformations from input-output examples</a></h2>
+<ul>
+<li>functional languages are well suited for program synthesis</li>
+<li>goal: to generate a program from example inductively
+<ul>
+<li>not any program but the most cost effective</li>
+<li>memorization isn't something wanted but if examples are exhaustive, fine
+though</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-15-programmatically-interpretable-reinforcement-learning-https-blogacolyerorg-2020-01-15-programmatically-interpretable-reinforcement-learning"></a><a href="#2020-01-15-programmatically-interpretable-reinforcement-learning-https-blogacolyerorg-2020-01-15-programmatically-interpretable-reinforcement-learning" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-15: <a href="https://blog.acolyer.org/2020/01/15/programmatically-interpretable-reinforcement-learning/">Programmatically interpretable reinforcement learning</a></h2>
+<ul>
+<li>pattern: a language and rules
+<ul>
+<li>use machine learning to learn rules in this language which are easy to
+explain by definition</li>
+<li>drawback: a lot of programs will be generated where some of them are
+obviously wrong. Then, input augmentation is needed by human to continue
+which acts like an oracle</li>
+</ul></li>
+<li>it opens the door to prune some policies since some rewards won't be
+satisfied, which are easy to verify</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-13-challenges-of-real-world-reinforcement-learning-https-blogacolyerorg-2020-01-13-challenges-of-real-world-rl"></a><a href="#2020-01-13-challenges-of-real-world-reinforcement-learning-https-blogacolyerorg-2020-01-13-challenges-of-real-world-rl" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-13: <a href="https://blog.acolyer.org/2020/01/13/challenges-of-real-world-rl/">Challenges of real-world reinforcement learning</a></h2>
+<ul>
+<li>simulation and real system are very different
+<ul>
+<li>security/safety is very important</li>
+<li>real-world data is needed</li>
+</ul></li>
+<li>challenges:
+<ul>
+<li>offline learning (i.e. from logs) - warm start, importance sampling, etc.</li>
+<li>fast online learning with sampling - data efficiency: accuracy threshold vs
+needed data sampling</li>
+<li>high dimensions and continuous space</li>
+<li>safety - a bounded learning or a layer that prevents unwanted actions</li>
+<li>partially seen - should also train to learn noise and delay</li>
+<li>not perfect reward functions - not a clear goal to optimise</li>
+<li>easy explanation/interpretation</li>
+<li>fast inference</li>
+<li>tolerance of delays in hardware components for reward - need of a memory</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-10-ten-challenges-for-making-automation-a-team-player-in-joint-human-agent-activity-https-blogacolyerorg-2020-01-10-ten-challenges-for-automation"></a><a href="#2020-01-10-ten-challenges-for-making-automation-a-team-player-in-joint-human-agent-activity-https-blogacolyerorg-2020-01-10-ten-challenges-for-automation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-10: <a href="https://blog.acolyer.org/2020/01/10/ten-challenges-for-automation/">Ten challenges for making automation a ‘team player’ in joint human-agent activity</a></h2>
+<ul>
+<li>requirements for coordination of a group, people and machines
+<ul>
+<li>agree to work together</li>
+<li>mutually predictable: planning</li>
+<li>mutually directable: influence positively</li>
+<li>common ground: knowledge and beliefs</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-08-ironies-of-automation-https-blogacolyerorg-2020-01-08-ironies-of-automation"></a><a href="#2020-01-08-ironies-of-automation-https-blogacolyerorg-2020-01-08-ironies-of-automation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-08: <a href="https://blog.acolyer.org/2020/01/08/ironies-of-automation/">Ironies of automation</a></h2>
+<ul>
+<li>combination of pieces results the opposite of the expected (simpson's paradox)
+<ul>
+<li>as automation gets more complex, we require higher skills in human oeprators</li>
+</ul></li>
+<li>human operator is needed:
+<ul>
+<li>to check correctness of the automation</li>
+<li>to take over the automation</li>
+</ul></li>
+<li>humans can't maintain their focus so alerts and alerts on alerts are needed
+<ul>
+<li>what about gray failures?</li>
+</ul></li>
+<li>main theme: pushing the limits of automation prevent us from controlling it
+<ul>
+<li>coding vs debugging (kernighan)</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-12-13-how-do-committees-invent-https-blogacolyerorg-2019-12-13-how-do-committees-invent"></a><a href="#2019-12-13-how-do-committees-invent-https-blogacolyerorg-2019-12-13-how-do-committees-invent" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-12-13: <a href="https://blog.acolyer.org/2019/12/13/how-do-committees-invent/">How do committees invent?</a></h2>
+<ul>
+<li>design: intellectual activity which creates a whole from moving/diverse pieces</li>
+<li>requirements:
+<ul>
+<li>system boundaries: what is in the scope?</li>
+<li>notion of organization</li>
+</ul></li>
+<li>as soon as team is chosen, everybody takes a part which is narrower in scope
+<ul>
+<li>it creates the coordination problem</li>
+<li>vital for unified system in the end</li>
+</ul></li>
+<li>adding more people constrain the options of possible designs
+<ul>
+<li>homomorphism between team communication and their design</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-12-11-a-tale-of-two-abstractions-the-case-for-object-space-https-blogacolyerorg-2019-12-11-a-tale-of-two-abstractions"></a><a href="#2019-12-11-a-tale-of-two-abstractions-the-case-for-object-space-https-blogacolyerorg-2019-12-11-a-tale-of-two-abstractions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-12-11: <a href="https://blog.acolyer.org/2019/12/11/a-tale-of-two-abstractions/">A tale of two abstractions: the case for object space</a></h2>
+<ul>
+<li>the problem: non-volatile pointers
+<ul>
+<li>global addressing after processes end and integration of existing hardware
+and interoperability of different memory hierarchies</li>
+<li>kind of object storage (ZODB in python)</li>
+</ul></li>
+<li>idea: virtual address space to logical address space which is composed of
+chunks, that are mapped to physical memory
+<ul>
+<li>that's why two level indirection</li>
+<li>cost is around ~0.4ns</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-12-09-a-persistent-problem-managing-pointers-in-nvm-https-blogacolyerorg-2019-12-09-a-persistent-problem"></a><a href="#2019-12-09-a-persistent-problem-managing-pointers-in-nvm-https-blogacolyerorg-2019-12-09-a-persistent-problem" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-12-09: <a href="https://blog.acolyer.org/2019/12/09/a-persistent-problem/">A persistent problem: managing pointers in NVM</a></h2>
+<ul>
+<li>byte-addressable NVM will change
+<ul>
+<li>how hardware is interacted</li>
+<li>the operation system design</li>
+<li>the way applications operate on data</li>
+</ul></li>
+<li>assumptions for NVM:
+<ul>
+<li>fast</li>
+<li>avoid serialization: in-memory data structure is put directly into the disk</li>
+<li>pointer logic: they point virtual memory locations</li>
+</ul></li>
+<li>cache the objects, not the cache lines (128 bits provide plenty of space)
+<ul>
+<li>in a global address space, fields are offset from the main object pointer</li>
+<li>object structure becomes public so application developer should handle it</li>
+<li>kernel interferes only on permission changes to set access control</li>
+<li>result: improves programmability and security without any overhead</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-12-06-benchmarking-spreadsheet-systems-https-blogacolyerorg-2019-12-06-benchmarking-spreadsheet-systems"></a><a href="#2019-12-06-benchmarking-spreadsheet-systems-https-blogacolyerorg-2019-12-06-benchmarking-spreadsheet-systems" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-12-06: <a href="https://blog.acolyer.org/2019/12/06/benchmarking-spreadsheet-systems/">Benchmarking spreadsheet systems</a></h2>
+<ul>
+<li>when spreadsheets were built, target was for human input but today we have
+more and more data
+<ul>
+<li>benchmarks: basic operations to decide complexity and room for improvement
+(index, incremental updates, etc.)</li>
+</ul></li>
+<li>result: they are far from basic usability and doesn't use any ideas from dbs
+<ul>
+<li>using a db backend and transparemtly translating operations to SQL might be
+good for a new plethora of spreadsheets</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-12-04-declarative-assembly-of-web-applications-from-pre-defined-concepts-https-blogacolyerorg-2019-12-04-declarative-assembly-of-web-applications-from-pre-defined-concepts"></a><a href="#2019-12-04-declarative-assembly-of-web-applications-from-pre-defined-concepts-https-blogacolyerorg-2019-12-04-declarative-assembly-of-web-applications-from-pre-defined-concepts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-12-04: <a href="https://blog.acolyer.org/2019/12/04/declarative-assembly-of-web-applications-from-pre-defined-concepts/">Declarative assembly of web applications from pre-defined concepts</a></h2>
+<ul>
+<li>open source use is increasing (right now around 50-70%)</li>
+<li>there are microservices that can be pulled, called concepts
+<ul>
+<li>interesting bit is coordinating them with a declarative configuration</li>
+</ul></li>
+<li>problems:
+<ul>
+<li>custom behavior</li>
+<li>limited reuse and not clear time savings</li>
+<li>curation of catalog</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-12-02-efficient-lock-free-durable-sets-https-blogacolyerorg-2019-12-02-efficient-lock-free-durable-sets"></a><a href="#2019-12-02-efficient-lock-free-durable-sets-https-blogacolyerorg-2019-12-02-efficient-lock-free-durable-sets" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-12-02: <a href="https://blog.acolyer.org/2019/12/02/efficient-lock-free-durable-sets/">Efficient lock-free durable sets</a></h2>
+<ul>
+<li>non-volatile memory doesn't guarantee durability by itself
+<ul>
+<li>cache and registers are still volatile</li>
+<li>for performance, operation can be reordered</li>
+<li>a log is needed</li>
+</ul></li>
+<li>main idea: data is durable but pointers are not
+<ul>
+<li>pointers are recoverable but slow</li>
+</ul></li>
+<li>implementation:
+<ul>
+<li>link-free: two bits; valid and deleted. Check NVRAM before returning.</li>
+<li>soft: three bits in non-volatile nodes and volatile nodes keep track the
+state of inserted, deleted, to be inserted, to be deleted</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-11-29-tla-model-checking-made-symbolic-https-blogacolyerorg-2019-11-29-tla-model-checking-made-symbolic"></a><a href="#2019-11-29-tla-model-checking-made-symbolic-https-blogacolyerorg-2019-11-29-tla-model-checking-made-symbolic" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-11-29: <a href="https://blog.acolyer.org/2019/11/29/tla-model-checking-made-symbolic/">TLA+ model checking made symbolic</a></h2>
+<ul>
+<li>convert transitions to quantifier-free SMT constraints to leverage SMT solvers
+<ul>
+<li>while TLC is hammered, this approach is still fast</li>
+<li>especially, constraints don't hold, TLC times out but this method gives real
+fast feedback</li>
+<li>Paxos and Raft are still hard to get a good performance</li>
+<li>kind of clear winner for inductive variants (APALACHE)</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2019-11-27-mergeable-replicated-data-types-part-ii-https-blogacolyerorg-2019-11-27-mergeable-replicated-data-types-part-ii"></a><a href="#2019-11-27-mergeable-replicated-data-types-part-ii-https-blogacolyerorg-2019-11-27-mergeable-replicated-data-types-part-ii" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019-11-27: <a href="https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/">Mergeable replicated data types – Part II</a></h2>
 <ul>
 <li>the method so far:
 <ul>
@@ -480,7 +667,7 @@ in aggregates
 <li>bar or table: to provide data for general exploration</li>
 </ul></li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 1/19/2020 by ferhat elmas</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/reading/books"><span class="arrow-prev">← </span><span>Books</span></a><a class="docs-next button" href="/docs/lang/vocabulary"><span>Vocabulary</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#2019-11-27-mergeable-replicated-data-types-part-ii">2019-11-27: <a href="https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/">Mergeable replicated data types – Part II</a></a></li><li><a href="#2019-11-25-mergeable-replicated-data-types-part-i">2019-11-25: <a href="https://blog.acolyer.org/2019/11/25/mergeable-replicated-data-types-part-i/">Mergeable replicated data types – Part I</a></a></li><li><a href="#2019-11-22-planalyzer-assessing-threats-to-the-validity-of-online-experiments">2019-11-22: <a href="https://blog.acolyer.org/2019/11/22/planalyzer/">PlanAlyzer: assessing threats to the validity of online experiments</a></a></li><li><a href="#2019-11-20-local-first-software-you-own-your-data-in-spite-of-the-cloud">2019-11-20: <a href="https://blog.acolyer.org/2019/11/20/local-first-software/">Local-first software: you own your data, in spite of the cloud</a></a></li><li><a href="#2019-11-18-formal-foundations-of-serverless-computing">2019-11-18: <a href="https://blog.acolyer.org/2019/11/18/formal-foundations-of-serverless-computing/">Formal foundations of serverless computing</a></a></li><li><a href="#2019-11-15-taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge">2019-11-15: <a href="https://blog.acolyer.org/2019/11/15/facebook-taiji/">Taiji: managing global user traffic for large-scale Internet services at the edge</a></a></li><li><a href="#2019-11-13-scaling-symbolic-evaluation-for-automated-verification-of-systems-code-with-serval">2019-11-13: <a href="https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/">Scaling symbolic evaluation for automated verification of systems code with Serval</a></a></li><li><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking">2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></a></li><li><a href="#2019-11-08-the-inflection-point-hypothesis-a-principled-approach-to-finding-the-root-cause-of-a-failure">2019-11-08: <a href="https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/">The inflection point hypothesis: a principled approach to finding the root cause of a failure</a></a></li><li><a href="#2019-11-06-file-systems-unfit-as-distributed-storage-backends-lessons-from-ten-years-of-ceph-evolution">2019-11-06: <a href="https://blog.acolyer.org/2019/11/06/ceph-evolution/">File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution</a></a></li><li><a href="#2019-11-04-an-analysis-of-performance-evolution-of-linuxs-core-operations">2019-11-04: <a href="https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/">An analysis of performance evolution of Linux’s core operations</a></a></li><li><a href="#2019-11-01-optimized-risk-scores">2019-11-01: <a href="https://blog.acolyer.org/2019/11/01/optimized-risk-scores/">Optimized risk scores</a></a></li><li><a href="#2019-10-30-learning-certifiably-optimal-rule-lists-for-categorical-data">2019-10-30: <a href="https://blog.acolyer.org/2019/10/30/corels/">Learning certifiably optimal rule lists for categorical data</a></a></li><li><a href="#2019-10-28-stop-explaining-black-box-machine-learning-models-for-high-stakes-decisions-and-use-interpretable-models-instead">2019-10-28: <a href="https://blog.acolyer.org/2019/10/28/interpretable-models/">Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead</a></a></li><li><a href="#2019-10-25-task-based-effectiveness-of-basic-visualizations">2019-10-25: <a href="https://blog.acolyer.org/2019/10/25/task-based-effectiveness-of-basic-visualizations/">Task-based effectiveness of basic visualizations</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">2020 ferhat elmas</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 1/19/2020 by ferhat elmas</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/reading/books"><span class="arrow-prev">← </span><span>Books</span></a><a class="docs-next button" href="/docs/lang/vocabulary"><span>Vocabulary</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples">2020-01-17: <a href="https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/">Synthesizing data structure transformations from input-output examples</a></a></li><li><a href="#2020-01-15-programmatically-interpretable-reinforcement-learning">2020-01-15: <a href="https://blog.acolyer.org/2020/01/15/programmatically-interpretable-reinforcement-learning/">Programmatically interpretable reinforcement learning</a></a></li><li><a href="#2020-01-13-challenges-of-real-world-reinforcement-learning">2020-01-13: <a href="https://blog.acolyer.org/2020/01/13/challenges-of-real-world-rl/">Challenges of real-world reinforcement learning</a></a></li><li><a href="#2020-01-10-ten-challenges-for-making-automation-a-team-player-in-joint-human-agent-activity">2020-01-10: <a href="https://blog.acolyer.org/2020/01/10/ten-challenges-for-automation/">Ten challenges for making automation a ‘team player’ in joint human-agent activity</a></a></li><li><a href="#2020-01-08-ironies-of-automation">2020-01-08: <a href="https://blog.acolyer.org/2020/01/08/ironies-of-automation/">Ironies of automation</a></a></li><li><a href="#2019-12-13-how-do-committees-invent">2019-12-13: <a href="https://blog.acolyer.org/2019/12/13/how-do-committees-invent/">How do committees invent?</a></a></li><li><a href="#2019-12-11-a-tale-of-two-abstractions-the-case-for-object-space">2019-12-11: <a href="https://blog.acolyer.org/2019/12/11/a-tale-of-two-abstractions/">A tale of two abstractions: the case for object space</a></a></li><li><a href="#2019-12-09-a-persistent-problem-managing-pointers-in-nvm">2019-12-09: <a href="https://blog.acolyer.org/2019/12/09/a-persistent-problem/">A persistent problem: managing pointers in NVM</a></a></li><li><a href="#2019-12-06-benchmarking-spreadsheet-systems">2019-12-06: <a href="https://blog.acolyer.org/2019/12/06/benchmarking-spreadsheet-systems/">Benchmarking spreadsheet systems</a></a></li><li><a href="#2019-12-04-declarative-assembly-of-web-applications-from-pre-defined-concepts">2019-12-04: <a href="https://blog.acolyer.org/2019/12/04/declarative-assembly-of-web-applications-from-pre-defined-concepts/">Declarative assembly of web applications from pre-defined concepts</a></a></li><li><a href="#2019-12-02-efficient-lock-free-durable-sets">2019-12-02: <a href="https://blog.acolyer.org/2019/12/02/efficient-lock-free-durable-sets/">Efficient lock-free durable sets</a></a></li><li><a href="#2019-11-29-tla-model-checking-made-symbolic">2019-11-29: <a href="https://blog.acolyer.org/2019/11/29/tla-model-checking-made-symbolic/">TLA+ model checking made symbolic</a></a></li><li><a href="#2019-11-27-mergeable-replicated-data-types-part-ii">2019-11-27: <a href="https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/">Mergeable replicated data types – Part II</a></a></li><li><a href="#2019-11-25-mergeable-replicated-data-types-part-i">2019-11-25: <a href="https://blog.acolyer.org/2019/11/25/mergeable-replicated-data-types-part-i/">Mergeable replicated data types – Part I</a></a></li><li><a href="#2019-11-22-planalyzer-assessing-threats-to-the-validity-of-online-experiments">2019-11-22: <a href="https://blog.acolyer.org/2019/11/22/planalyzer/">PlanAlyzer: assessing threats to the validity of online experiments</a></a></li><li><a href="#2019-11-20-local-first-software-you-own-your-data-in-spite-of-the-cloud">2019-11-20: <a href="https://blog.acolyer.org/2019/11/20/local-first-software/">Local-first software: you own your data, in spite of the cloud</a></a></li><li><a href="#2019-11-18-formal-foundations-of-serverless-computing">2019-11-18: <a href="https://blog.acolyer.org/2019/11/18/formal-foundations-of-serverless-computing/">Formal foundations of serverless computing</a></a></li><li><a href="#2019-11-15-taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge">2019-11-15: <a href="https://blog.acolyer.org/2019/11/15/facebook-taiji/">Taiji: managing global user traffic for large-scale Internet services at the edge</a></a></li><li><a href="#2019-11-13-scaling-symbolic-evaluation-for-automated-verification-of-systems-code-with-serval">2019-11-13: <a href="https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/">Scaling symbolic evaluation for automated verification of systems code with Serval</a></a></li><li><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking">2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></a></li><li><a href="#2019-11-08-the-inflection-point-hypothesis-a-principled-approach-to-finding-the-root-cause-of-a-failure">2019-11-08: <a href="https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/">The inflection point hypothesis: a principled approach to finding the root cause of a failure</a></a></li><li><a href="#2019-11-06-file-systems-unfit-as-distributed-storage-backends-lessons-from-ten-years-of-ceph-evolution">2019-11-06: <a href="https://blog.acolyer.org/2019/11/06/ceph-evolution/">File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution</a></a></li><li><a href="#2019-11-04-an-analysis-of-performance-evolution-of-linuxs-core-operations">2019-11-04: <a href="https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/">An analysis of performance evolution of Linux’s core operations</a></a></li><li><a href="#2019-11-01-optimized-risk-scores">2019-11-01: <a href="https://blog.acolyer.org/2019/11/01/optimized-risk-scores/">Optimized risk scores</a></a></li><li><a href="#2019-10-30-learning-certifiably-optimal-rule-lists-for-categorical-data">2019-10-30: <a href="https://blog.acolyer.org/2019/10/30/corels/">Learning certifiably optimal rule lists for categorical data</a></a></li><li><a href="#2019-10-28-stop-explaining-black-box-machine-learning-models-for-high-stakes-decisions-and-use-interpretable-models-instead">2019-10-28: <a href="https://blog.acolyer.org/2019/10/28/interpretable-models/">Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead</a></a></li><li><a href="#2019-10-25-task-based-effectiveness-of-basic-visualizations">2019-10-25: <a href="https://blog.acolyer.org/2019/10/25/task-based-effectiveness-of-basic-visualizations/">Task-based effectiveness of basic visualizations</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">2020 ferhat elmas</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
