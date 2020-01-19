@@ -2,6 +2,18 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-08: [Ironies of automation](https://blog.acolyer.org/2020/01/08/ironies-of-automation/)
+
+- combination of pieces results the opposite of the expected (simpson's paradox)
+  - as automation gets more complex, we require higher skills in human oeprators
+- human operator is needed:
+  - to check correctness of the automation
+  - to take over the automation
+- humans can't maintain their focus so alerts and alerts on alerts are needed
+  - what about gray failures?
+- main theme: pushing the limits of automation prevent us from controlling it
+  - coding vs debugging (kernighan)
+
 ## 2019-12-13: [How do committees invent?](https://blog.acolyer.org/2019/12/13/how-do-committees-invent/)
 
 - design: intellectual activity which creates a whole from moving/diverse pieces
