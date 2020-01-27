@@ -2,6 +2,46 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-20: [STELLA: report from the SNAFU-catchers workshop on coping with complexity](https://blog.acolyer.org/2020/01/20/stella-coping-with-complexity-2/)
+
+- Wood's theorem: as system complexity increases, the view of the agent shrinks
+  dramatically.
+  - there is always a human in the automation (irony of automation)
+- emergent complexity: linear increase in the system size causes super-linear
+  complexity increase
+  - think about side channel interactions and finer gradation (i.e. gray
+    failures, etc.)
+- anomalies:
+  - diversity aids resilience (ex: automation pushes faulty version but
+    automation is buggy and fails so some servers still run healthy version and
+    as a result, system is up)
+  - false representation (monitoring says healthy while it's not)
+  - manifestations are far from the cause
+- common features of anomalies:
+  - a result of unanticipated interactions
+  - no single root cause
+  - in-place for so long and were waiting to explode
+  - caused by a slight deviation from the normal operations
+  - initially covered by resiliency checks but go over them
+- dimensions that affect good incident resolution:
+  - how understood what was happening
+  - how explored the possible sources
+  - how weighed alternative corrective actions and made sacrifice decisions
+  - how deployed resources
+  - how managed side effects
+  - how compensated for deteriorating conditions
+  - how revised their problem understanding and coordinated with others
+- results:
+  - postmortems are gold
+  - blame vs sanction vs accountability
+  - coordination cost control and up-front planning
+  - improve visualisations and auto-correlations
+  - eliminate strange-loops (a system provide a service also depends on that
+    service)
+  - dark debt (similar to technical debt, accumulated complexity generates
+    anomalies and we're not absolutely aware of it and its effect isn't on
+    development speed)
+
 ## 2020-01-17: [Synthesizing data structure transformations from input-output examples](https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/)
 
 - functional languages are well suited for program synthesis
