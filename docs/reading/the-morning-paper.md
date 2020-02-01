@@ -2,6 +2,22 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-22: [Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 1)](https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/)
+
+- key challenges:
+  - opaque systems: complex, abstractions, different behaviors under load,
+    unclear boundaries, etc.
+  - distributed and not deterministic
+  - teams are distributed
+  - always open to changes
+- teams are at advantage to solve incidents over individuals:
+  - a wider attention
+  - a broader expertise
+  - parallel work and adaptability
+- heuristics are important to get a resolution quickly
+  - however, can cause cognitive fixation; a solution without signals and
+    various drawbacks
+
 ## 2020-01-20: [STELLA: report from the SNAFU-catchers workshop on coping with complexity](https://blog.acolyer.org/2020/01/20/stella-coping-with-complexity-2/)
 
 - Wood's theorem: as system complexity increases, the view of the agent shrinks
