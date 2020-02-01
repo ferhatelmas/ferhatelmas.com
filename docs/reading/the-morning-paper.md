@@ -2,6 +2,12 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-24: [Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 2)](https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-2/)
+
+- focus on a quick remedy instead of full recovery and fix on root cause
+- abduction: logical inference from observation with the simplest explanation
+- success of the system: depends on adaptive capacity of human
+
 ## 2020-01-22: [Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 1)](https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/)
 
 - key challenges:
