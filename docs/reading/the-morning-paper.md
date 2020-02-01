@@ -2,6 +2,30 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-01-31: [Seamless offloading of web app computations from mobile device to edge clouds via HTML5 Web Worker migration](https://blog.acolyer.org/2020/01/31/web-worker-migration/)
+
+- latency requires edge computing
+  - mobile can't offer the power for compute and servers are far away
+- snapshot of state is needed
+  - js is fine but wasm can be a problem due to native code (i.e. arm vs x86)
+- migration destination
+  - a manager to control the resources
+  - an estimation of the task is needed
+  - periodic checks if there are new open resources to improve the performance
+  - there is a stable fallback server too since client is mobile
+  - if fallback isn't accessible, worker is restarted and if it can be
+    predicted, worker can be moved to the client
+
+## 2020-01-29: [Narrowing the gap between serverless and its state with storage functions](https://blog.acolyer.org/2020/01/29/narrowing-the-gap/)
+
+- implementation of old idea in serverless environments: stored procedures
+  - uses V8 for isolation
+
+## 2020-01-27: [Reverb: speculative debugging for web applications](https://blog.acolyer.org/2020/01/27/reverb-speculative-debugging/)
+
+- log js execution and provide speculative fix and replay execution
+  - replay part is like magic
+
 ## 2020-01-24: [Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 2)](https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-2/)
 
 - focus on a quick remedy instead of full recovery and fix on root cause
