@@ -2,6 +2,29 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-03: [The measure and mismeasure of fairness: a critical review of machine learning](https://blog.acolyer.org/2020/02/03/measure-mismeasure-fairness/)
+
+- russell/whitehead: a basis for math
+- godel: any consistent axiomatic system will have theorems that can be
+  explained within the system
+- to show real fairness of machine learning: we need to show properties of the
+  data, which is coming from outside of the system
+- fairness will be more important since systems are being automated by machine
+  learning
+- fairness; properties are divided into two: protected and unprotected
+  - anti-classification: no use of protected attributes. Limitation: leaving
+    them out makes the result worse in general.
+  - classification parity: protected attributed can't affect positive outcome,
+    there is a base error across groups(parity). Limitation: error distributions
+    are generally very different.
+  - calibration: outcome is independent from protected attributes. Limitation:
+    Simpson's paradox, changing outcome is easy by regrouping.
+- requirements:
+  - real/correct data
+  - sample bias
+  - interpretability
+  - group vs individual thinking
+
 ## 2020-01-31: [Seamless offloading of web app computations from mobile device to edge clouds via HTML5 Web Worker migration](https://blog.acolyer.org/2020/01/31/web-worker-migration/)
 
 - latency requires edge computing
