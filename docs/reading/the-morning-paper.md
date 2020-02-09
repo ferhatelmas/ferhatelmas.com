@@ -2,6 +2,15 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-07: [Cloudburst: stateful functions-as-a-service](https://blog.acolyer.org/2020/02/07/cloudburst/)
+
+- big idea: cache data and run the function close the cache
+  - kv store
+  - cache-consistency protocols
+  - scheduler
+- serverless: separate storage and compute to scale independently
+  - here idea is to separate logically but physically there are close
+
 ## 2020-02-05: [POTS: protective optimization technologies](https://blog.acolyer.org/2020/02/05/protective-optimization-technologies/)
 
 - when we care about fairness in machine learning, we need to consider delayed
