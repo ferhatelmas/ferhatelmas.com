@@ -2,6 +2,19 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-05: [POTS: protective optimization technologies](https://blog.acolyer.org/2020/02/05/protective-optimization-technologies/)
+
+- when we care about fairness in machine learning, we need to consider delayed
+  impact to create feedback loops
+- aspects:
+  - domain assumptions
+  - requirements
+  - spec
+  - program
+- negative externalities: negative effects of a system
+  - uber: good pricing at the cost of pollution, less public transport, etc.
+  - inputs: user, seen by the algorithm and regulations
+
 ## 2020-02-03: [The measure and mismeasure of fairness: a critical review of machine learning](https://blog.acolyer.org/2020/02/03/measure-mismeasure-fairness/)
 
 - russell/whitehead: a basis for math
