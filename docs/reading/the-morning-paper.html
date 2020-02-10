@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Morning Paper Notes · ferhat elmas</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 2020-01-17: [Synthesizing data structure transformations from input-output examples](https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="The Morning Paper Notes · ferhat elmas"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ferhatelmas.com/"/><meta property="og:description" content="## 2020-01-17: [Synthesizing data structure transformations from input-output examples](https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/)"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ferhatelmas.com/blog/atom.xml" title="ferhat elmas Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ferhatelmas.com/blog/feed.xml" title="ferhat elmas Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Morning Paper Notes · ferhat elmas</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 2020-02-07: [Cloudburst: stateful functions-as-a-service](https://blog.acolyer.org/2020/02/07/cloudburst/)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="The Morning Paper Notes · ferhat elmas"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ferhatelmas.com/"/><meta property="og:description" content="## 2020-02-07: [Cloudburst: stateful functions-as-a-service](https://blog.acolyer.org/2020/02/07/cloudburst/)"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ferhatelmas.com/blog/atom.xml" title="ferhat elmas Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ferhatelmas.com/blog/feed.xml" title="ferhat elmas Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
             {"zIndex":100}
@@ -60,7 +60,178 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">The Morning Paper Notes</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples-https-blogacolyerorg-2020-01-17-synthesizing-data-structure-transformations"></a><a href="#2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples-https-blogacolyerorg-2020-01-17-synthesizing-data-structure-transformations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-17: <a href="https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/">Synthesizing data structure transformations from input-output examples</a></h2>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">The Morning Paper Notes</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="2020-02-07-cloudburst-stateful-functions-as-a-service-https-blogacolyerorg-2020-02-07-cloudburst"></a><a href="#2020-02-07-cloudburst-stateful-functions-as-a-service-https-blogacolyerorg-2020-02-07-cloudburst" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-02-07: <a href="https://blog.acolyer.org/2020/02/07/cloudburst/">Cloudburst: stateful functions-as-a-service</a></h2>
+<ul>
+<li>big idea: cache data and run the function close the cache
+<ul>
+<li>kv store</li>
+<li>cache-consistency protocols</li>
+<li>scheduler</li>
+</ul></li>
+<li>serverless: separate storage and compute to scale independently
+<ul>
+<li>here idea is to separate logically but physically there are close</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-02-05-pots-protective-optimization-technologies-https-blogacolyerorg-2020-02-05-protective-optimization-technologies"></a><a href="#2020-02-05-pots-protective-optimization-technologies-https-blogacolyerorg-2020-02-05-protective-optimization-technologies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-02-05: <a href="https://blog.acolyer.org/2020/02/05/protective-optimization-technologies/">POTS: protective optimization technologies</a></h2>
+<ul>
+<li>when we care about fairness in machine learning, we need to consider delayed
+impact to create feedback loops</li>
+<li>aspects:
+<ul>
+<li>domain assumptions</li>
+<li>requirements</li>
+<li>spec</li>
+<li>program</li>
+</ul></li>
+<li>negative externalities: negative effects of a system
+<ul>
+<li>uber: good pricing at the cost of pollution, less public transport, etc.</li>
+<li>inputs: user, seen by the algorithm and regulations</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-02-03-the-measure-and-mismeasure-of-fairness-a-critical-review-of-machine-learning-https-blogacolyerorg-2020-02-03-measure-mismeasure-fairness"></a><a href="#2020-02-03-the-measure-and-mismeasure-of-fairness-a-critical-review-of-machine-learning-https-blogacolyerorg-2020-02-03-measure-mismeasure-fairness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-02-03: <a href="https://blog.acolyer.org/2020/02/03/measure-mismeasure-fairness/">The measure and mismeasure of fairness: a critical review of machine learning</a></h2>
+<ul>
+<li>russell/whitehead: a basis for math</li>
+<li>godel: any consistent axiomatic system will have theorems that can be
+explained within the system</li>
+<li>to show real fairness of machine learning: we need to show properties of the
+data, which is coming from outside of the system</li>
+<li>fairness will be more important since systems are being automated by machine
+learning</li>
+<li>fairness; properties are divided into two: protected and unprotected
+<ul>
+<li>anti-classification: no use of protected attributes. Limitation: leaving
+them out makes the result worse in general.</li>
+<li>classification parity: protected attributed can't affect positive outcome,
+there is a base error across groups(parity). Limitation: error distributions
+are generally very different.</li>
+<li>calibration: outcome is independent from protected attributes. Limitation:
+Simpson's paradox, changing outcome is easy by regrouping.</li>
+</ul></li>
+<li>requirements:
+<ul>
+<li>real/correct data</li>
+<li>sample bias</li>
+<li>interpretability</li>
+<li>group vs individual thinking</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-31-seamless-offloading-of-web-app-computations-from-mobile-device-to-edge-clouds-via-html5-web-worker-migration-https-blogacolyerorg-2020-01-31-web-worker-migration"></a><a href="#2020-01-31-seamless-offloading-of-web-app-computations-from-mobile-device-to-edge-clouds-via-html5-web-worker-migration-https-blogacolyerorg-2020-01-31-web-worker-migration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-31: <a href="https://blog.acolyer.org/2020/01/31/web-worker-migration/">Seamless offloading of web app computations from mobile device to edge clouds via HTML5 Web Worker migration</a></h2>
+<ul>
+<li>latency requires edge computing
+<ul>
+<li>mobile can't offer the power for compute and servers are far away</li>
+</ul></li>
+<li>snapshot of state is needed
+<ul>
+<li>js is fine but wasm can be a problem due to native code (i.e. arm vs x86)</li>
+</ul></li>
+<li>migration destination
+<ul>
+<li>a manager to control the resources</li>
+<li>an estimation of the task is needed</li>
+<li>periodic checks if there are new open resources to improve the performance</li>
+<li>there is a stable fallback server too since client is mobile</li>
+<li>if fallback isn't accessible, worker is restarted and if it can be
+predicted, worker can be moved to the client</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-29-narrowing-the-gap-between-serverless-and-its-state-with-storage-functions-https-blogacolyerorg-2020-01-29-narrowing-the-gap"></a><a href="#2020-01-29-narrowing-the-gap-between-serverless-and-its-state-with-storage-functions-https-blogacolyerorg-2020-01-29-narrowing-the-gap" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-29: <a href="https://blog.acolyer.org/2020/01/29/narrowing-the-gap/">Narrowing the gap between serverless and its state with storage functions</a></h2>
+<ul>
+<li>implementation of old idea in serverless environments: stored procedures
+<ul>
+<li>uses V8 for isolation</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-27-reverb-speculative-debugging-for-web-applications-https-blogacolyerorg-2020-01-27-reverb-speculative-debugging"></a><a href="#2020-01-27-reverb-speculative-debugging-for-web-applications-https-blogacolyerorg-2020-01-27-reverb-speculative-debugging" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-27: <a href="https://blog.acolyer.org/2020/01/27/reverb-speculative-debugging/">Reverb: speculative debugging for web applications</a></h2>
+<ul>
+<li>log js execution and provide speculative fix and replay execution
+<ul>
+<li>replay part is like magic</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-24-trade-offs-under-pressure-heuristics-and-observations-of-teams-resolving-internet-service-outages-part-2-https-blogacolyerorg-2020-01-22-trade-offs-under-pressure-part-2"></a><a href="#2020-01-24-trade-offs-under-pressure-heuristics-and-observations-of-teams-resolving-internet-service-outages-part-2-https-blogacolyerorg-2020-01-22-trade-offs-under-pressure-part-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-24: <a href="https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-2/">Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 2)</a></h2>
+<ul>
+<li>focus on a quick remedy instead of full recovery and fix on root cause</li>
+<li>abduction: logical inference from observation with the simplest explanation</li>
+<li>success of the system: depends on adaptive capacity of human</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-22-trade-offs-under-pressure-heuristics-and-observations-of-teams-resolving-internet-service-outages-part-1-https-blogacolyerorg-2020-01-22-trade-offs-under-pressure-part-1"></a><a href="#2020-01-22-trade-offs-under-pressure-heuristics-and-observations-of-teams-resolving-internet-service-outages-part-1-https-blogacolyerorg-2020-01-22-trade-offs-under-pressure-part-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-22: <a href="https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/">Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 1)</a></h2>
+<ul>
+<li>key challenges:
+<ul>
+<li>opaque systems: complex, abstractions, different behaviors under load,
+unclear boundaries, etc.</li>
+<li>distributed and not deterministic</li>
+<li>teams are distributed</li>
+<li>always open to changes</li>
+</ul></li>
+<li>teams are at advantage to solve incidents over individuals:
+<ul>
+<li>a wider attention</li>
+<li>a broader expertise</li>
+<li>parallel work and adaptability</li>
+</ul></li>
+<li>heuristics are important to get a resolution quickly
+<ul>
+<li>however, can cause cognitive fixation; a solution without signals and
+various drawbacks</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-20-stella-report-from-the-snafu-catchers-workshop-on-coping-with-complexity-https-blogacolyerorg-2020-01-20-stella-coping-with-complexity-2"></a><a href="#2020-01-20-stella-report-from-the-snafu-catchers-workshop-on-coping-with-complexity-https-blogacolyerorg-2020-01-20-stella-coping-with-complexity-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-20: <a href="https://blog.acolyer.org/2020/01/20/stella-coping-with-complexity-2/">STELLA: report from the SNAFU-catchers workshop on coping with complexity</a></h2>
+<ul>
+<li>Wood's theorem: as system complexity increases, the view of the agent shrinks
+dramatically.
+<ul>
+<li>there is always a human in the automation (irony of automation)</li>
+</ul></li>
+<li>emergent complexity: linear increase in the system size causes super-linear
+complexity increase
+<ul>
+<li>think about side channel interactions and finer gradation (i.e. gray
+failures, etc.)</li>
+</ul></li>
+<li>anomalies:
+<ul>
+<li>diversity aids resilience (ex: automation pushes faulty version but
+automation is buggy and fails so some servers still run healthy version and
+as a result, system is up)</li>
+<li>false representation (monitoring says healthy while it's not)</li>
+<li>manifestations are far from the cause</li>
+</ul></li>
+<li>common features of anomalies:
+<ul>
+<li>a result of unanticipated interactions</li>
+<li>no single root cause</li>
+<li>in-place for so long and were waiting to explode</li>
+<li>caused by a slight deviation from the normal operations</li>
+<li>initially covered by resiliency checks but go over them</li>
+</ul></li>
+<li>dimensions that affect good incident resolution:
+<ul>
+<li>how understood what was happening</li>
+<li>how explored the possible sources</li>
+<li>how weighed alternative corrective actions and made sacrifice decisions</li>
+<li>how deployed resources</li>
+<li>how managed side effects</li>
+<li>how compensated for deteriorating conditions</li>
+<li>how revised their problem understanding and coordinated with others</li>
+</ul></li>
+<li>results:
+<ul>
+<li>postmortems are gold</li>
+<li>blame vs sanction vs accountability</li>
+<li>coordination cost control and up-front planning</li>
+<li>improve visualisations and auto-correlations</li>
+<li>eliminate strange-loops (a system provide a service also depends on that
+service)</li>
+<li>dark debt (similar to technical debt, accumulated complexity generates
+anomalies and we're not absolutely aware of it and its effect isn't on
+development speed)</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples-https-blogacolyerorg-2020-01-17-synthesizing-data-structure-transformations"></a><a href="#2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples-https-blogacolyerorg-2020-01-17-synthesizing-data-structure-transformations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020-01-17: <a href="https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/">Synthesizing data structure transformations from input-output examples</a></h2>
 <ul>
 <li>functional languages are well suited for program synthesis</li>
 <li>goal: to generate a program from example inductively
@@ -667,7 +838,7 @@ in aggregates
 <li>bar or table: to provide data for general exploration</li>
 </ul></li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 1/19/2020 by ferhat elmas</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/reading/books"><span class="arrow-prev">← </span><span>Books</span></a><a class="docs-next button" href="/docs/lang/vocabulary"><span>Vocabulary</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples">2020-01-17: <a href="https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/">Synthesizing data structure transformations from input-output examples</a></a></li><li><a href="#2020-01-15-programmatically-interpretable-reinforcement-learning">2020-01-15: <a href="https://blog.acolyer.org/2020/01/15/programmatically-interpretable-reinforcement-learning/">Programmatically interpretable reinforcement learning</a></a></li><li><a href="#2020-01-13-challenges-of-real-world-reinforcement-learning">2020-01-13: <a href="https://blog.acolyer.org/2020/01/13/challenges-of-real-world-rl/">Challenges of real-world reinforcement learning</a></a></li><li><a href="#2020-01-10-ten-challenges-for-making-automation-a-team-player-in-joint-human-agent-activity">2020-01-10: <a href="https://blog.acolyer.org/2020/01/10/ten-challenges-for-automation/">Ten challenges for making automation a ‘team player’ in joint human-agent activity</a></a></li><li><a href="#2020-01-08-ironies-of-automation">2020-01-08: <a href="https://blog.acolyer.org/2020/01/08/ironies-of-automation/">Ironies of automation</a></a></li><li><a href="#2019-12-13-how-do-committees-invent">2019-12-13: <a href="https://blog.acolyer.org/2019/12/13/how-do-committees-invent/">How do committees invent?</a></a></li><li><a href="#2019-12-11-a-tale-of-two-abstractions-the-case-for-object-space">2019-12-11: <a href="https://blog.acolyer.org/2019/12/11/a-tale-of-two-abstractions/">A tale of two abstractions: the case for object space</a></a></li><li><a href="#2019-12-09-a-persistent-problem-managing-pointers-in-nvm">2019-12-09: <a href="https://blog.acolyer.org/2019/12/09/a-persistent-problem/">A persistent problem: managing pointers in NVM</a></a></li><li><a href="#2019-12-06-benchmarking-spreadsheet-systems">2019-12-06: <a href="https://blog.acolyer.org/2019/12/06/benchmarking-spreadsheet-systems/">Benchmarking spreadsheet systems</a></a></li><li><a href="#2019-12-04-declarative-assembly-of-web-applications-from-pre-defined-concepts">2019-12-04: <a href="https://blog.acolyer.org/2019/12/04/declarative-assembly-of-web-applications-from-pre-defined-concepts/">Declarative assembly of web applications from pre-defined concepts</a></a></li><li><a href="#2019-12-02-efficient-lock-free-durable-sets">2019-12-02: <a href="https://blog.acolyer.org/2019/12/02/efficient-lock-free-durable-sets/">Efficient lock-free durable sets</a></a></li><li><a href="#2019-11-29-tla-model-checking-made-symbolic">2019-11-29: <a href="https://blog.acolyer.org/2019/11/29/tla-model-checking-made-symbolic/">TLA+ model checking made symbolic</a></a></li><li><a href="#2019-11-27-mergeable-replicated-data-types-part-ii">2019-11-27: <a href="https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/">Mergeable replicated data types – Part II</a></a></li><li><a href="#2019-11-25-mergeable-replicated-data-types-part-i">2019-11-25: <a href="https://blog.acolyer.org/2019/11/25/mergeable-replicated-data-types-part-i/">Mergeable replicated data types – Part I</a></a></li><li><a href="#2019-11-22-planalyzer-assessing-threats-to-the-validity-of-online-experiments">2019-11-22: <a href="https://blog.acolyer.org/2019/11/22/planalyzer/">PlanAlyzer: assessing threats to the validity of online experiments</a></a></li><li><a href="#2019-11-20-local-first-software-you-own-your-data-in-spite-of-the-cloud">2019-11-20: <a href="https://blog.acolyer.org/2019/11/20/local-first-software/">Local-first software: you own your data, in spite of the cloud</a></a></li><li><a href="#2019-11-18-formal-foundations-of-serverless-computing">2019-11-18: <a href="https://blog.acolyer.org/2019/11/18/formal-foundations-of-serverless-computing/">Formal foundations of serverless computing</a></a></li><li><a href="#2019-11-15-taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge">2019-11-15: <a href="https://blog.acolyer.org/2019/11/15/facebook-taiji/">Taiji: managing global user traffic for large-scale Internet services at the edge</a></a></li><li><a href="#2019-11-13-scaling-symbolic-evaluation-for-automated-verification-of-systems-code-with-serval">2019-11-13: <a href="https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/">Scaling symbolic evaluation for automated verification of systems code with Serval</a></a></li><li><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking">2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></a></li><li><a href="#2019-11-08-the-inflection-point-hypothesis-a-principled-approach-to-finding-the-root-cause-of-a-failure">2019-11-08: <a href="https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/">The inflection point hypothesis: a principled approach to finding the root cause of a failure</a></a></li><li><a href="#2019-11-06-file-systems-unfit-as-distributed-storage-backends-lessons-from-ten-years-of-ceph-evolution">2019-11-06: <a href="https://blog.acolyer.org/2019/11/06/ceph-evolution/">File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution</a></a></li><li><a href="#2019-11-04-an-analysis-of-performance-evolution-of-linuxs-core-operations">2019-11-04: <a href="https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/">An analysis of performance evolution of Linux’s core operations</a></a></li><li><a href="#2019-11-01-optimized-risk-scores">2019-11-01: <a href="https://blog.acolyer.org/2019/11/01/optimized-risk-scores/">Optimized risk scores</a></a></li><li><a href="#2019-10-30-learning-certifiably-optimal-rule-lists-for-categorical-data">2019-10-30: <a href="https://blog.acolyer.org/2019/10/30/corels/">Learning certifiably optimal rule lists for categorical data</a></a></li><li><a href="#2019-10-28-stop-explaining-black-box-machine-learning-models-for-high-stakes-decisions-and-use-interpretable-models-instead">2019-10-28: <a href="https://blog.acolyer.org/2019/10/28/interpretable-models/">Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead</a></a></li><li><a href="#2019-10-25-task-based-effectiveness-of-basic-visualizations">2019-10-25: <a href="https://blog.acolyer.org/2019/10/25/task-based-effectiveness-of-basic-visualizations/">Task-based effectiveness of basic visualizations</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">2020 ferhat elmas</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2/9/2020 by ferhat elmas</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/reading/books"><span class="arrow-prev">← </span><span>Books</span></a><a class="docs-next button" href="/docs/lang/vocabulary"><span>Vocabulary</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#2020-02-07-cloudburst-stateful-functions-as-a-service">2020-02-07: <a href="https://blog.acolyer.org/2020/02/07/cloudburst/">Cloudburst: stateful functions-as-a-service</a></a></li><li><a href="#2020-02-05-pots-protective-optimization-technologies">2020-02-05: <a href="https://blog.acolyer.org/2020/02/05/protective-optimization-technologies/">POTS: protective optimization technologies</a></a></li><li><a href="#2020-02-03-the-measure-and-mismeasure-of-fairness-a-critical-review-of-machine-learning">2020-02-03: <a href="https://blog.acolyer.org/2020/02/03/measure-mismeasure-fairness/">The measure and mismeasure of fairness: a critical review of machine learning</a></a></li><li><a href="#2020-01-31-seamless-offloading-of-web-app-computations-from-mobile-device-to-edge-clouds-via-html5-web-worker-migration">2020-01-31: <a href="https://blog.acolyer.org/2020/01/31/web-worker-migration/">Seamless offloading of web app computations from mobile device to edge clouds via HTML5 Web Worker migration</a></a></li><li><a href="#2020-01-29-narrowing-the-gap-between-serverless-and-its-state-with-storage-functions">2020-01-29: <a href="https://blog.acolyer.org/2020/01/29/narrowing-the-gap/">Narrowing the gap between serverless and its state with storage functions</a></a></li><li><a href="#2020-01-27-reverb-speculative-debugging-for-web-applications">2020-01-27: <a href="https://blog.acolyer.org/2020/01/27/reverb-speculative-debugging/">Reverb: speculative debugging for web applications</a></a></li><li><a href="#2020-01-24-trade-offs-under-pressure-heuristics-and-observations-of-teams-resolving-internet-service-outages-part-2">2020-01-24: <a href="https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-2/">Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 2)</a></a></li><li><a href="#2020-01-22-trade-offs-under-pressure-heuristics-and-observations-of-teams-resolving-internet-service-outages-part-1">2020-01-22: <a href="https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/">Trade-offs under pressure: heuristics and observations of teams resolving internet service outages (Part 1)</a></a></li><li><a href="#2020-01-20-stella-report-from-the-snafu-catchers-workshop-on-coping-with-complexity">2020-01-20: <a href="https://blog.acolyer.org/2020/01/20/stella-coping-with-complexity-2/">STELLA: report from the SNAFU-catchers workshop on coping with complexity</a></a></li><li><a href="#2020-01-17-synthesizing-data-structure-transformations-from-input-output-examples">2020-01-17: <a href="https://blog.acolyer.org/2020/01/17/synthesizing-data-structure-transformations/">Synthesizing data structure transformations from input-output examples</a></a></li><li><a href="#2020-01-15-programmatically-interpretable-reinforcement-learning">2020-01-15: <a href="https://blog.acolyer.org/2020/01/15/programmatically-interpretable-reinforcement-learning/">Programmatically interpretable reinforcement learning</a></a></li><li><a href="#2020-01-13-challenges-of-real-world-reinforcement-learning">2020-01-13: <a href="https://blog.acolyer.org/2020/01/13/challenges-of-real-world-rl/">Challenges of real-world reinforcement learning</a></a></li><li><a href="#2020-01-10-ten-challenges-for-making-automation-a-team-player-in-joint-human-agent-activity">2020-01-10: <a href="https://blog.acolyer.org/2020/01/10/ten-challenges-for-automation/">Ten challenges for making automation a ‘team player’ in joint human-agent activity</a></a></li><li><a href="#2020-01-08-ironies-of-automation">2020-01-08: <a href="https://blog.acolyer.org/2020/01/08/ironies-of-automation/">Ironies of automation</a></a></li><li><a href="#2019-12-13-how-do-committees-invent">2019-12-13: <a href="https://blog.acolyer.org/2019/12/13/how-do-committees-invent/">How do committees invent?</a></a></li><li><a href="#2019-12-11-a-tale-of-two-abstractions-the-case-for-object-space">2019-12-11: <a href="https://blog.acolyer.org/2019/12/11/a-tale-of-two-abstractions/">A tale of two abstractions: the case for object space</a></a></li><li><a href="#2019-12-09-a-persistent-problem-managing-pointers-in-nvm">2019-12-09: <a href="https://blog.acolyer.org/2019/12/09/a-persistent-problem/">A persistent problem: managing pointers in NVM</a></a></li><li><a href="#2019-12-06-benchmarking-spreadsheet-systems">2019-12-06: <a href="https://blog.acolyer.org/2019/12/06/benchmarking-spreadsheet-systems/">Benchmarking spreadsheet systems</a></a></li><li><a href="#2019-12-04-declarative-assembly-of-web-applications-from-pre-defined-concepts">2019-12-04: <a href="https://blog.acolyer.org/2019/12/04/declarative-assembly-of-web-applications-from-pre-defined-concepts/">Declarative assembly of web applications from pre-defined concepts</a></a></li><li><a href="#2019-12-02-efficient-lock-free-durable-sets">2019-12-02: <a href="https://blog.acolyer.org/2019/12/02/efficient-lock-free-durable-sets/">Efficient lock-free durable sets</a></a></li><li><a href="#2019-11-29-tla-model-checking-made-symbolic">2019-11-29: <a href="https://blog.acolyer.org/2019/11/29/tla-model-checking-made-symbolic/">TLA+ model checking made symbolic</a></a></li><li><a href="#2019-11-27-mergeable-replicated-data-types-part-ii">2019-11-27: <a href="https://blog.acolyer.org/2019/11/27/mergeable-replicated-data-types-part-ii/">Mergeable replicated data types – Part II</a></a></li><li><a href="#2019-11-25-mergeable-replicated-data-types-part-i">2019-11-25: <a href="https://blog.acolyer.org/2019/11/25/mergeable-replicated-data-types-part-i/">Mergeable replicated data types – Part I</a></a></li><li><a href="#2019-11-22-planalyzer-assessing-threats-to-the-validity-of-online-experiments">2019-11-22: <a href="https://blog.acolyer.org/2019/11/22/planalyzer/">PlanAlyzer: assessing threats to the validity of online experiments</a></a></li><li><a href="#2019-11-20-local-first-software-you-own-your-data-in-spite-of-the-cloud">2019-11-20: <a href="https://blog.acolyer.org/2019/11/20/local-first-software/">Local-first software: you own your data, in spite of the cloud</a></a></li><li><a href="#2019-11-18-formal-foundations-of-serverless-computing">2019-11-18: <a href="https://blog.acolyer.org/2019/11/18/formal-foundations-of-serverless-computing/">Formal foundations of serverless computing</a></a></li><li><a href="#2019-11-15-taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge">2019-11-15: <a href="https://blog.acolyer.org/2019/11/15/facebook-taiji/">Taiji: managing global user traffic for large-scale Internet services at the edge</a></a></li><li><a href="#2019-11-13-scaling-symbolic-evaluation-for-automated-verification-of-systems-code-with-serval">2019-11-13: <a href="https://blog.acolyer.org/2019/11/13/scaling-symbolic-evaluation-serval/">Scaling symbolic evaluation for automated verification of systems code with Serval</a></a></li><li><a href="#2019-11-11-snap-a-microkernel-approach-to-host-networking">2019-11-11: <a href="https://blog.acolyer.org/2019/11/11/snap-networking/">Snap: a microkernel approach to host networking</a></a></li><li><a href="#2019-11-08-the-inflection-point-hypothesis-a-principled-approach-to-finding-the-root-cause-of-a-failure">2019-11-08: <a href="https://blog.acolyer.org/2019/11/08/the-inflection-point-hypothesis/">The inflection point hypothesis: a principled approach to finding the root cause of a failure</a></a></li><li><a href="#2019-11-06-file-systems-unfit-as-distributed-storage-backends-lessons-from-ten-years-of-ceph-evolution">2019-11-06: <a href="https://blog.acolyer.org/2019/11/06/ceph-evolution/">File systems unfit as distributed storage backends: lessons from ten years of Ceph evolution</a></a></li><li><a href="#2019-11-04-an-analysis-of-performance-evolution-of-linuxs-core-operations">2019-11-04: <a href="https://blog.acolyer.org/2019/11/04/an-analysis-of-performance-evolution-of-linuxs-core-operations/">An analysis of performance evolution of Linux’s core operations</a></a></li><li><a href="#2019-11-01-optimized-risk-scores">2019-11-01: <a href="https://blog.acolyer.org/2019/11/01/optimized-risk-scores/">Optimized risk scores</a></a></li><li><a href="#2019-10-30-learning-certifiably-optimal-rule-lists-for-categorical-data">2019-10-30: <a href="https://blog.acolyer.org/2019/10/30/corels/">Learning certifiably optimal rule lists for categorical data</a></a></li><li><a href="#2019-10-28-stop-explaining-black-box-machine-learning-models-for-high-stakes-decisions-and-use-interpretable-models-instead">2019-10-28: <a href="https://blog.acolyer.org/2019/10/28/interpretable-models/">Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead</a></a></li><li><a href="#2019-10-25-task-based-effectiveness-of-basic-visualizations">2019-10-25: <a href="https://blog.acolyer.org/2019/10/25/task-based-effectiveness-of-basic-visualizations/">Task-based effectiveness of basic visualizations</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">2020 ferhat elmas</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
