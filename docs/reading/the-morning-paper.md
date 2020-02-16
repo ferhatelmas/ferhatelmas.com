@@ -2,6 +2,35 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-12: [Let's Encrypt: an automated certificate authority to encrypt the entire web](https://blog.acolyer.org/2020/02/12/lets-encrypt-an-automated-certificate-authority-to-encrypt-the-entire-web/)
+
+- Let's encrpyt: largest authority (by ease-of-use) but still big websites don't
+  use it
+  - DV: domain validation
+  - OV: organization validation
+  - EV: extended validation
+  - OV and EV require manual paper inspection but big browsers don't distinguish
+    between them anymore
+- hosting and CDN providers use it for their customers automatically
+- caddy provisions let's encrypt certificates automatically but apache/nginx are
+  the biggest servers with this certificate
+- interesting note: free let's encrypt couldn't reduce prices in other CAs.
+- ownership validations are prone to network-layer attacks (BGP hijacking)
+- CA functions at boulder
+  - issuing certificates via ACME
+  - submitting pre-certificates and certificates to tranparency logs
+  - publication of certificate revocation status
+- boulder: design principles
+  - minimal logic
+  - minimal data collection
+  - full automation
+  - functional isolation (gRPC)
+  - operational isolation
+  - continuous availability
+- being free minimizes operational cost
+- let's encrypt is immediately ready when signed so provides gradual deployment
+  unlike other systems such as DNS authentication of Named Entities
+
 ## 2020-02-10: [Watching you watch: the tracking system of over-the-top TV streaming devices](https://blog.acolyer.org/2020/02/10/watching-you-watch/)
 
 - headline: when you watch TV, your TV is watching you and there are less
