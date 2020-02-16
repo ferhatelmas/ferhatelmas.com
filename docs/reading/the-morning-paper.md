@@ -2,6 +2,11 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-10: [Watching you watch: the tracking system of over-the-top TV streaming devices](https://blog.acolyer.org/2020/02/10/watching-you-watch/)
+
+- headline: when you watch TV, your TV is watching you and there are less
+  measures than web and mobile to protect yourself
+
 ## 2020-02-07: [Cloudburst: stateful functions-as-a-service](https://blog.acolyer.org/2020/02/07/cloudburst/)
 
 - big idea: cache data and run the function close the cache
