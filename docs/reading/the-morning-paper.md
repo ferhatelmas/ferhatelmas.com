@@ -2,6 +2,41 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-14: [Programs, life cycles, and laws of software evolution](https://blog.acolyer.org/2020/02/14/programs-life-cycles-laws/)
+
+- what a programmer does:
+  - state an algorithm that correctly an unambiguously defines a mechanical
+    procedure for obtaining a solution to a given problem
+- maintenance: anything other than initial development
+- unit cost of change should be as low as possible and alterability should be
+  maintained
+- programs are models of a model of a theory of a reality:
+  - s-program: simple, easy to validate from spec
+  - p-program: real-world problems so they aren't precise enough anymore. They
+    make sense in their real-life context. If output differs from the expected,
+    the program must change. And real-life always changes so does the program.
+  - e-program: embedded to the world to get real-time feedback and its results
+    are part of the world so they can be the cause of a change in the real-life.
+- any system can always be split into implementable s-programs (might be seen as
+  complete and correct) - (this is interesting)
+- project managers are incentivised to focus on short-term at the cost of
+  long-term. Long-term cost is hard to predict/calculate. That's why executive
+  should be the balance check.
+- rules:
+  - p and e programs are never done, we should expect a change.
+  - with change, complexity increases and structure decays.
+  - resources that can be applied to a project are limited.
+  - perceived complexity in successive releases is constant because even if a
+    change is tiny, intellectual time and effort needed is teh sum of existing
+    system plus patch.
+  - program evolution has a dynamics. A big change is problematic so causes a
+    clean-up session. A small change is easier to take to the users so it can be
+    done more often. According to these rates, it's a statistical limit of what
+    can be done.
+- software planning must balance following:
+  - measures and models obtained from the evolving process
+  - business needs and market considerations
+
 ## 2020-02-12: [Let's Encrypt: an automated certificate authority to encrypt the entire web](https://blog.acolyer.org/2020/02/12/lets-encrypt-an-automated-certificate-authority-to-encrypt-the-entire-web/)
 
 - Let's encrpyt: largest authority (by ease-of-use) but still big websites don't
@@ -18,7 +53,7 @@ title: The Morning Paper Notes
 - ownership validations are prone to network-layer attacks (BGP hijacking)
 - CA functions at boulder
   - issuing certificates via ACME
-  - submitting pre-certificates and certificates to tranparency logs
+  - submitting pre-certificates and certificates to transparency logs
   - publication of certificate revocation status
 - boulder: design principles
   - minimal logic
