@@ -2,6 +2,25 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-16: [Migrating a privacy-safe information extraction system to a Software 2.0 design](https://blog.acolyer.org/2020/02/17/software-20-migration/)
+
+- software 2.0: key components are implemented by neural networks
+  - this is a case study to replace hand coded system with neural network so
+    that code is deleted and the system is back to improvement.
+  - implementation changes focus to curate training data to define what the
+    system should do
+- results from google email extraction service
+  - precision and recall increased
+  - removed code (45 kloc)
+  - simpler to maintain
+  - open doors to new possibilities
+- problem is training data generation and on top, it's private
+- juicer:
+  - classifier for XPaths of the email HTML DOM
+  - any span of text is a field, field scores are averaged
+  - a generator is built and only highly-confident results are put into training
+    data
+
 ## 2020-02-14: [Programs, life cycles, and laws of software evolution](https://blog.acolyer.org/2020/02/14/programs-life-cycles-laws/)
 
 - what a programmer does:
