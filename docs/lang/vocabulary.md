@@ -19,6 +19,7 @@ Some interesting words that are good to know
 - castle in the air: a desire, idea or plan that is unlikely to ever be realized
 - cryptodepression: the portion of something which lies below the seen. In
   geograpy, below see level
+- deglutition: the process of swallowing
 - evert: to turn upside down
 - fichu: a triangular scarf to cover the neck and the chest
 - finesse: to evade a situation or a problem in a smart way
@@ -63,6 +64,7 @@ Some interesting words that are good to know
 - trounce: to beat or to defeat very badly
 - tumultuous: loud, confused, chaotic noise
 - unwearied: never tiring or stopping
+- vamp up: repair or patch
 - war-weary: tired from fighting (in a war)
 - well-boat: a fishing vessel designed to carry live fish in a tank or well
 - wozzle effect: the phenomenon where frequent early citations cause a mistaken
