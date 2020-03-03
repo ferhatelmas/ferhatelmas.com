@@ -2,6 +2,22 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-19: [Cloudy with a high chance of DBMS: a 10-year prediction for enterprise-grade ML](https://blog.acolyer.org/2020/02/19/ten-year-egml-predictions/)
+
+- data handling, model fairness, user privacy and debugging will be more
+  important for enterprise
+- ml models: software derived from data
+- mismatch: regulated domains require expert knowledge which lacks system and
+  software engineering practices. Less skilled but more demands.
+- reliable training, provenance and score tracking over time are becoming
+  foundational
+- main areas: training (also include data gathering), inference and model
+  update/maintenance
+- bets:
+  - train in the cloud: large data, spikes, latest hardware, etc.
+  - scoring goes to db: inference will be everywhere
+  - governance will be everywhere: secure access, versioning, provenance, etc.
+
 ## 2020-02-16: [Migrating a privacy-safe information extraction system to a Software 2.0 design](https://blog.acolyer.org/2020/02/17/software-20-migration/)
 
 - software 2.0: key components are implemented by neural networks
