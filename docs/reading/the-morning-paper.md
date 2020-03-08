@@ -2,6 +2,32 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-21: [Extending relational query processing with ML inference](https://blog.acolyer.org/2020/02/21/extending-relational-query-processing/)
+
+- database is a good place to leverage ML
+  - transactions
+  - security
+  - auditing
+- there is a format in mlflow open format then it's translated into a common
+  representation. There are limitations such as loops, missing types, unknown
+  libraries. They are converted as user defined functions.
+- operators are extensive:
+  - all relational algebra
+  - linear algebra (matrix multiplication, convolution)
+  - higher ml (decision trees)
+  - data feature operators (one hot encoding, etc.)
+- idea might be to enable high level definition of the pipeline instead of
+  recovering from an imperative program
+- this implementation uses optimizations from relational and ml domain:
+  - where clause
+  - non contributing feature
+  - inlining to replace ml operators with relational operators
+  - nn translation: replace feature operators with neural networks that can be
+    run in optimized runtime directly
+- result: promising
+  - big numbers are better due to automatic parallelizing
+  - small numbers are slowers due to caching
+
 ## 2020-02-19: [Cloudy with a high chance of DBMS: a 10-year prediction for enterprise-grade ML](https://blog.acolyer.org/2020/02/19/ten-year-egml-predictions/)
 
 - data handling, model fairness, user privacy and debugging will be more
