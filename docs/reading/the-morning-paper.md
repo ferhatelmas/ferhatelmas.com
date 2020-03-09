@@ -2,6 +2,23 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-26: [Meaningful availability](https://blog.acolyer.org/2020/02/26/meaningful-availability/)
+
+- good availability metric properties:
+  - meaningful: reflects the real user experience
+  - proportional: change in metric reflects the change in perceived availability
+  - actionable: insight about why
+- time based, number of nines: good / total
+  - downtime in peak isn't equal to downtime in quiet periods
+- count based: success / total requests
+  - skewed for power users
+  - less requests when system isn't healthy, so skews the metric
+  - less meaningful since there is no notion of time
+- if we can combine both from the user perspective then it makes sense
+  - user-uptime
+  - assume the last status until contrary is seen but with some cutoff to mark
+    the period as inactive
+
 ## 2020-02-24: [AnyLog: a grand unification of the internet of things](https://blog.acolyer.org/2020/02/24/anylog/)
 
 - goal: decentralized publishing and access to structured data
