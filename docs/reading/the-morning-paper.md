@@ -2,6 +2,25 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-28: [Gandalf: an intelligent, end-to-end analytics service for safe deployment in cloud-scale infrastructure](https://blog.acolyer.org/2020/02/28/microsoft-gandalf/)
+
+- teams started trusting automated solution
+  - deployment speed increased
+  - all evidence for decisions is available in an interactive interface
+- detecting failure is hard
+  - constant change
+  - temporary failures outside of the rollout
+  - delayed issues such as memory leaks
+  - detection of cause
+- lambda architecture: slow and fast paths
+  - fast: immediate faluires
+  - slow: complex analysis and deferred issues
+- usual suspects:
+  - anomaly detection: many rollouts
+  - correlation: no causal relationship
+  - supervised learning: constant change isn't detected
+  - solution is to combine them in the preceeding order
+
 ## 2020-02-26: [Meaningful availability](https://blog.acolyer.org/2020/02/26/meaningful-availability/)
 
 - good availability metric properties:
