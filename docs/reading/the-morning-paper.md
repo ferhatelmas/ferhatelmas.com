@@ -2,6 +2,25 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-02-24: [AnyLog: a grand unification of the internet of things](https://blog.acolyer.org/2020/02/24/anylog/)
+
+- goal: decentralized publishing and access to structured data
+- difference than semantic web and freebase
+  - economic incentives to contribute
+  - SQL interface instead of graph
+  - provide compute/storage infrastructure
+- members:
+  - client: issues queries
+  - coordinator: receive queries and return results
+  - contractor: data provider
+  - publisher: actual data producer
+  - blockchain: discover and trust capabilities
+- difference: each query requires payment which goes to
+  coordinator/contractors/publishers
+- problems:
+  - trust between publisher and coordinator/contractor
+  - scalability due to blockchain updates
+
 ## 2020-02-21: [Extending relational query processing with ML inference](https://blog.acolyer.org/2020/02/21/extending-relational-query-processing/)
 
 - database is a good place to leverage ML
