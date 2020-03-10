@@ -2,6 +2,21 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-02: [Firecracker: lighweight virtualization for serverless applications](https://blog.acolyer.org/2020/03/02/firecracker/)
+
+- goal: strong security and minimal overhead (accumulates per function quickly
+  and soft-allocation, allocate on demand up to its limit)
+  - containers: same kernel is difficult to secure even if some parts are moved
+    to user-space
+  - lanugage VMs are no because of arbitrary binary support
+  - VM: not efficient, overheads
+  - unikernels: not generic enough, might require changes in the binary
+- implementation for specific design goals:
+  - less assumptions
+  - smaller code footprints due to less features; no usb, no video/audio
+  - simpler rate limiters; billing only, etc.
+  - REST api for management of these micro VMs
+
 ## 2020-02-28: [Gandalf: an intelligent, end-to-end analytics service for safe deployment in cloud-scale infrastructure](https://blog.acolyer.org/2020/02/28/microsoft-gandalf/)
 
 - teams started trusting automated solution
