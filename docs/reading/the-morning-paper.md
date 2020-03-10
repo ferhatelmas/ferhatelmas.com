@@ -2,6 +2,19 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-09: [Building an elastic query engine on disaggregated storage](https://blog.acolyer.org/2020/03/09/snowflake/)
+
+- cloud-native:
+  - disaggregation: scaling independently (ephemeral storage)
+  - elasticity: rapid resource allocation
+  - isolation
+- ephemeral caching
+  - two-tier (in-memory/SSD and S3)
+  - consistent hashing between data and node
+- elasticity
+  - ec2 / s3
+  - lazy reconfiguration from consistent hashing
+
 ## 2020-03-04: [Millions of tiny databases](https://blog.acolyer.org/2020/03/04/millions-of-tiny-databases/)
 
 - guiding principle: blast radius reduction (smaller scope on outage)
@@ -34,7 +47,7 @@ title: The Morning Paper Notes
   and soft-allocation, allocate on demand up to its limit)
   - containers: same kernel is difficult to secure even if some parts are moved
     to user-space
-  - lanugage VMs are no because of arbitrary binary support
+  - language VMs are no because of arbitrary binary support
   - VM: not efficient, overheads
   - unikernels: not generic enough, might require changes in the binary
 - implementation for specific design goals:
