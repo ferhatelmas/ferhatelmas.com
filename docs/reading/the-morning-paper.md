@@ -2,6 +2,32 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-04: [Millions of tiny databases](https://blog.acolyer.org/2020/03/04/millions-of-tiny-databases/)
+
+- guiding principle: blast radius reduction (smaller scope on outage)
+- db: made up from cells that spans multiple (7) nodes (a single server)
+  - a node can participate in multiple cells
+  - a cell manages a single partition (small number of clients)
+- reconfiguration always happens to move closer to clients
+  - bulk (new)
+  - log-based (partition, pause)
+  - whack-a-mole (gaps in the log)
+- cell: 7 nodes
+  - durability
+  - tail latency
+  - availability
+  - small transaction/data size
+- partition: client and db stays in the same side by clever allocation
+- same state: might cause the same error and correlate failures
+- testing:
+  - TLA+
+  - simulators within editors
+  - jepsen for network failures
+  - game days
+- robustness principle:
+  - be conservative what you do, be liberal in what you accept
+  - this doesn't work well for consensus
+
 ## 2020-03-02: [Firecracker: lighweight virtualization for serverless applications](https://blog.acolyer.org/2020/03/02/firecracker/)
 
 - goal: strong security and minimal overhead (accumulates per function quickly
@@ -28,7 +54,7 @@ title: The Morning Paper Notes
   - delayed issues such as memory leaks
   - detection of cause
 - lambda architecture: slow and fast paths
-  - fast: immediate faluires
+  - fast: immediate failures
   - slow: complex analysis and deferred issues
 - usual suspects:
   - anomaly detection: many rollouts
