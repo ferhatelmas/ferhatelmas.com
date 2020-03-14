@@ -43,10 +43,12 @@ Some interesting words that are good to know
   conceptualized in mind
 - **mercurial**: volatile character, quick-witted
 - **mind-boggling**: beyond one's ability to understand
+- **muliebrity**: womanhood, the quality of being a woman
 - **nithing**: a wicked person
 - **ordure**: something regarded as contaminating or perveting the morals
 - **out of kilter**: not being able to work properly
 - **pandect**: a whole collection of law (in a country)
+- **ply**: to adapt and to change someone's mind
 - **potluck**: a meal offered to a guest with what is available
 - **primum mobile**: main reason and cause
 - **run someone ragged**: expect excessive effort from someone
