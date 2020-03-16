@@ -2,6 +2,25 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-13: [When correlation(or lack of it) can be causation](https://blog.acolyer.org/2020/03/13/correlation-x-2/)
+
+- rex: forget changing but should change together
+- cloud canary: changed together, but don't want. Looks for correlated failures.
+- rex:
+  - change rule discovery: file changed together from last 6 month of version
+    control
+  - thresholding with confidence
+  - refining of changes via regular expression
+  - constant feedback if changes are incorporated
+- fault graph: how components are tied to each other and can cause service
+  disruption
+  - root means service is down
+  - incremental fault graph generation
+  - converted to boolean formula and solved via a sat solver
+  - risk groups are detected: probabilities of failure and cause for disruption
+  - a config can specify goals, and a plan will be generated to satisfy it by
+    moving / adding replicas
+
 ## 2020-03-11: [Characterizing, modeling, and benchmarking RocksDB key-value workloads at Facebook](https://blog.acolyer.org/2020/03/11/rocks-db-at-facebook/)
 
 - there is a big difference between real-world workloads and synthetic
