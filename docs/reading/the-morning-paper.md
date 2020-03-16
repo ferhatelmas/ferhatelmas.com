@@ -2,6 +2,22 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-11: [Characterizing, modeling, and benchmarking RocksDB key-value workloads at Facebook](https://blog.acolyer.org/2020/03/11/rocks-db-at-facebook/)
+
+- there is a big difference between real-world workloads and synthetic
+  benchmarks
+- rocksdb:
+  - general get, put and delete operations
+  - iterator for range scan
+  - delete range to delete a range of keys
+  - merge: read-edit-write, changes are stacked as deltas and reading merges
+    deltas by a user-provided function
+- use-cases:
+  - storage engine for mysql (sql converted to rocksdb operations)
+  - zippyDB distributed kv-store: metadata
+  - distributed kv for stat collection: dominated by merge
+- most important difference: hot key range distribution
+
 ## 2020-03-09: [Building an elastic query engine on disaggregated storage](https://blog.acolyer.org/2020/03/09/snowflake/)
 
 - cloud-native:
