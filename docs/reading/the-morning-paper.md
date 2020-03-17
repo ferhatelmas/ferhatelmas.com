@@ -2,6 +2,20 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-16: [Understanding, detecting and localizing partial failures in large system software](https://blog.acolyer.org/2020/03/16/omega-gen/)
+
+- gray failures are hard to detect
+- main reasons:
+  - uncaught errors
+  - indefinite blocking
+  - buggy error handling
+- runtime information is needed to decide
+  - automatic intrinsic watchdog generation that runs concurrently next to the
+    actual code
+  - process: identify long running methods, extract vulnerable parts with some
+    heuristics, reduce the method to the interested part for watchdog
+    replication, then run with new params in a sandbox (timeout)
+
 ## 2020-03-13: [When correlation(or lack of it) can be causation](https://blog.acolyer.org/2020/03/13/correlation-x-2/)
 
 - rex: forget changing but should change together
