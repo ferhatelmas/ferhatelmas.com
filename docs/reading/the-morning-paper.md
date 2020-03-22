@@ -2,6 +2,25 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-18: [An empirical guide to the behavior and use of scalable persistent memory](https://blog.acolyer.org/2020/03/18/scalable-persistent-memory/)
+
+- real non-volatile memory: not slower, persistent DRAM
+  - lower latency
+  - higher bandwidth
+  - address-based interface
+- two modes: memory and app mode
+  - app can control everything in the memory hierarchy
+- difference with DRAM
+  - read: 2x-3x slower
+  - random-vs-sequential: 20% vs 80s performance gap
+  - different bandwidth for read/write: 2.9x vs 1.3 for DRAM
+  - low block read (<256B) performance is poor
+- guidelines:
+  - avoid small random access
+  - use non-temporal store for large transfers
+  - limit concurrency
+  - avoid NUMA accesses
+
 ## 2020-03-16: [Understanding, detecting and localizing partial failures in large system software](https://blog.acolyer.org/2020/03/16/omega-gen/)
 
 - gray failures are hard to detect
