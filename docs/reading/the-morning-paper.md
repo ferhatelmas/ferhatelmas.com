@@ -2,6 +2,20 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-03-20: [Serverless in the wild: characterizing and optimising the serverless workload at a large cloud provider](https://blog.acolyer.org/2020/03/20/serverless-in-the-wild/)
+
+- higher cost vs higher quality
+  - avoid cold start vs reduce resource consumption
+- function execution is very short
+  - that's why function start time becomes more important
+- goal:
+  - when to pre-warm
+  - how much to keep alive
+- learn behavior per function with minimal overhead
+  - range histogram: capture idle time
+  - standard keep-alive unless enough data: no pre-warm and 4 hour keep-alive
+  - ARIMA model for long idle times
+
 ## 2020-03-18: [An empirical guide to the behavior and use of scalable persistent memory](https://blog.acolyer.org/2020/03/18/scalable-persistent-memory/)
 
 - real non-volatile memory: not slower, persistent DRAM
