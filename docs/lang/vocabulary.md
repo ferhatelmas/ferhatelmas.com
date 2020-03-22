@@ -11,6 +11,7 @@ Some interesting words that are good to know
 - **blooper**: an error or a recording of an amusing accident
 - **blotto**: very drunk
 - **brumous**: foggy
+- **bruxism**: grinding teeth in sleep due to stress
 - **bunny boiler**: a person acts obsessively and dangerously to the person whom
   wishes to be in a relationship
 - **cachexia**: a systemic wasting of muscle tissue
@@ -28,6 +29,7 @@ Some interesting words that are good to know
 - **get a word in edgewise**: to break in or participate in a conversation
 - **gigot**: a leg of lamb
 - **grace note**: finishing touch (figuratively)
+- **grimoire**: a book that contains magic spells
 - **groom of stool**: a person that helps to use toilet (britain)
 - **gumption**: common sense
 - **gylany**: a social system in which women and men are equal
@@ -54,11 +56,12 @@ Some interesting words that are good to know
 - **run someone ragged**: expect excessive effort from someone
 - **saturnine**: a person who is slow to change and cold
 - **scut**: a hare in a game
-- **succour**: to give aid, assistance or help
 - **skimble-skamble**: confused
+- **slugabed**: a lazy person lies in the bed
 - **smell you later**: good bye
 - **stink to high heaven**: to have a very strong and unpleasant smell,
   ethically dubious or very incompetent.
+- **succour**: to give aid, assistance or help
 - **swole**: muscular (slang) or erect (slang) or having very negative feelings
 - **take the gilt of the gingerbread**: to take away the most attractive part
 - **tellurian**: of or relating to the earth and in science fiction, inhabiting
@@ -69,6 +72,7 @@ Some interesting words that are good to know
 - **tumultuous**: loud, confused, chaotic noise
 - **unwearied**: never tiring or stopping
 - **vamp up**: repair or patch
+- **vernal**: things happen in spring
 - **war-weary**: tired from fighting (in a war)
 - **well-boat**: a fishing vessel designed to carry live fish in a tank or well
 - **wozzle effect**: the phenomenon where frequent early citations cause a
