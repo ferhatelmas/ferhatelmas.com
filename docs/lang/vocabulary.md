@@ -25,6 +25,7 @@ Some interesting words that are good to know
 - **evert**: to turn upside down
 - **fichu**: a triangular scarf to cover the neck and the chest
 - **finesse**: to evade a situation or a problem in a smart way
+- **forthwith**: formally without delay
 - **fullness of time**: the time is appropriate for something but not too soon
 - **get a word in edgewise**: to break in or participate in a conversation
 - **gigot**: a leg of lamb
@@ -33,6 +34,8 @@ Some interesting words that are good to know
 - **groom of stool**: a person that helps to use toilet (britain)
 - **gumption**: common sense
 - **gylany**: a social system in which women and men are equal
+- **hearken**: hear or listen carefully
+- **histrionic**: excessively emotional
 - **hyperthymesia**: a rare superior autobiographical memory and an ability to
   recall personal events and experiences
 - **inexorable**: inevitable
@@ -46,17 +49,23 @@ Some interesting words that are good to know
 - **mercurial**: volatile character, quick-witted
 - **mind-boggling**: beyond one's ability to understand
 - **muliebrity**: womanhood, the quality of being a woman
+- **navel-gazing**: excessive focus on oneself; self-indulgent introspection
+- **nincompoop**: a foolish or silly person
 - **nithing**: a wicked person
+- **not to put too fine a point on it**: apologize for an impolite statement
 - **ordure**: something regarded as contaminating or perveting the morals
 - **out of kilter**: not being able to work properly
 - **pandect**: a whole collection of law (in a country)
 - **ply**: to adapt and to change someone's mind
 - **potluck**: a meal offered to a guest with what is available
 - **primum mobile**: main reason and cause
+- **pronoia**: foresight
 - **run someone ragged**: expect excessive effort from someone
 - **saturnine**: a person who is slow to change and cold
 - **scut**: a hare in a game
+- **sedulous**: perseverance in business
 - **skimble-skamble**: confused
+- **slanhood**: being a science-fiction fan
 - **slugabed**: a lazy person lies in the bed
 - **smell you later**: good bye
 - **stink to high heaven**: to have a very strong and unpleasant smell,
