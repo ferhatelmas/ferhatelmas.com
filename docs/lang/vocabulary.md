@@ -39,14 +39,17 @@ Some interesting words that are good to know
 - **hyperthymesia**: a rare superior autobiographical memory and an ability to
   recall personal events and experiences
 - **inexorable**: inevitable
+- **inkling**: a slight implication or a hint
 - **jovial**: cheerful and good-humoured
 - **knacker's yard**: the place where things, that aren't useable anymore, are
   sent
 - **koha**: a tradition of giving gifts
 - **learn the ropes**: master of the introduction and basics
+- **lisson**: flexible and graceful (having elegance) in movement
 - **mentalese**: a language in which thoughts aren't verbalized but
   conceptualized in mind
 - **mercurial**: volatile character, quick-witted
+- **milquetoast**: ineffective (informal US)
 - **mind-boggling**: beyond one's ability to understand
 - **muliebrity**: womanhood, the quality of being a woman
 - **navel-gazing**: excessive focus on oneself; self-indulgent introspection
