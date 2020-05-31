@@ -22,6 +22,8 @@ Some interesting words that are good to know
 - **cryptodepression**: the portion of something which lies below the seen. In
   geograpy, below see level
 - **deglutition**: the process of swallowing
+- **effloresce**: to give flowers or in more general, to emerge
+- **enfeoff**: to give up completely
 - **evert**: to turn upside down
 - **fichu**: a triangular scarf to cover the neck and the chest
 - **finesse**: to evade a situation or a problem in a smart way
