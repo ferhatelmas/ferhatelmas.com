@@ -18,6 +18,7 @@ Some interesting words that are good to know
 - **bruxism**: grinding teeth in sleep due to stress
 - **bunny boiler**: a person acts obsessively and dangerously to the person whom
   wishes to be in a relationship
+- **by dint of**: by reason of, because of
 - **cachexia**: a systemic wasting of muscle tissue
 - **calends**: the first day of a month
 - **caliginous**: dark, dim or misty
@@ -78,6 +79,8 @@ Some interesting words that are good to know
 - **potluck**: a meal offered to a guest with what is available
 - **primum mobile**: main reason and cause
 - **pronoia**: foresight
+- **rambunctious**: energetic and difficult to control
+- **retience**: unwillingness to say much
 - **run someone ragged**: expect excessive effort from someone
 - **saturnine**: a person who is slow to change and cold
 - **scut**: a hare in a game
