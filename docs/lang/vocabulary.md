@@ -9,6 +9,7 @@ Some interesting words that are good to know
 - **aphotic**: having no light, especially sunlight
 - **banausic**: sticking to technical/formal matters
 - **beg to differ**: to offer an opposing oninion humbly
+- **blimey**: used to express anger, excitement, and surprise
 - **blooper**: an error or a recording of an amusing accident
 - **blotto**: very drunk
 - **bodice ripper**: a romantic novel with historical setting and apparent
@@ -56,8 +57,10 @@ Some interesting words that are good to know
 - **knacker's yard**: the place where things, that aren't useable anymore, are
   sent
 - **koha**: a tradition of giving gifts
+- **languor**: extremely exhausted
 - **learn the ropes**: master of the introduction and basics
 - **lisson**: flexible and graceful (having elegance) in movement
+- **logorrhea**: too talkative
 - **lucid**: rational
 - **malarkey**: rubbish, nonsense talk
 - **mentalese**: a language in which thoughts aren't verbalized but
@@ -87,6 +90,8 @@ Some interesting words that are good to know
 - **sedulous**: perseverance in business
 - **sheathe**: enclave a sharp item
 - **shipshape**: too tidy and neat
+- **shot across the bow**: if something continues, negative consequences will
+  show up
 - **skimble-skamble**: confused
 - **slanhood**: being a science-fiction fan
 - **slugabed**: a lazy person lies in the bed
@@ -107,7 +112,9 @@ Some interesting words that are good to know
 - **vernal**: things happen in spring
 - **war-weary**: tired from fighting (in a war)
 - **well-boat**: a fishing vessel designed to carry live fish in a tank or well
+- **woe betide**: warning someone about bad things would happen
 - **world-weary**: bored with life
+- **worth one's salt**: competent especially at work
 - **wozzle effect**: the phenomenon where frequent early citations cause a
   mistaken public belief where no evidence exists
 - **zippy**: energetic and lively
