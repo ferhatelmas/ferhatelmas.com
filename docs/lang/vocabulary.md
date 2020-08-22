@@ -25,6 +25,8 @@ Some interesting words that are good to know
 - **caliginous**: dark, dim or misty
 - **castle in the air**: a desire, idea or plan that is unlikely to ever be
   realized
+- **clinicide**: the deliberate killing of a patient in the course of medical
+  treatment
 - **cook someone's goose**: spoil the surprise of someone
 - **cryptodepression**: the portion of something which lies below the seen. In
   geograpy, below see level
@@ -37,6 +39,7 @@ Some interesting words that are good to know
 - **finesse**: to evade a situation or a problem in a smart way
 - **forthwith**: formally without delay
 - **fugazi**: fucked up, broken, beyond repair
+- **full-throated**: using all the power of one's voice
 - **fullness of time**: the time is appropriate for something but not too soon
 - **get a word in edgewise**: to break in or participate in a conversation
 - **gigot**: a leg of lamb
@@ -51,6 +54,7 @@ Some interesting words that are good to know
 - **hyperthymesia**: a rare superior autobiographical memory and an ability to
   recall personal events and experiences
 - **inexorable**: inevitable
+- **inglenook**: a chimney corner
 - **inkling**: a slight implication or a hint
 - **jaw-dropping**: very surprising
 - **jovial**: cheerful and good-humoured
@@ -71,6 +75,7 @@ Some interesting words that are good to know
 - **muggle**: marijuana
 - **muliebrity**: womanhood, the quality of being a woman
 - **navel-gazing**: excessive focus on oneself; self-indulgent introspection
+- **necropolis**: a huge cemetery
 - **nincompoop**: a foolish or silly person
 - **nithing**: a wicked person
 - **not to put too fine a point on it**: apologize for an impolite statement
