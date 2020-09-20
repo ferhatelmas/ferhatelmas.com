@@ -84,12 +84,16 @@ Some interesting words that are good to know
 - **pandect**: a whole collection of law (in a country)
 - **pilliwinks**: a torture device to crash fingers
 - **ply**: to adapt and to change someone's mind
+- **poisoned chalice**: something seen adventagous in the beginning but turned
+  out to be harmful
 - **potluck**: a meal offered to a guest with what is available
 - **primum mobile**: main reason and cause
 - **pronoia**: foresight
 - **rambunctious**: energetic and difficult to control
 - **retience**: unwillingness to say much
 - **run someone ragged**: expect excessive effort from someone
+- **rutilant**: shining with red color
+- **sargasso**: confused or tangled
 - **saturnine**: a person who is slow to change and cold
 - **scut**: a hare in a game
 - **sedulous**: perseverance in business
@@ -104,6 +108,7 @@ Some interesting words that are good to know
 - **stink to high heaven**: to have a very strong and unpleasant smell,
   ethically dubious or very incompetent.
 - **succour**: to give aid, assistance or help
+- **suspirium**: deep breath or heart beat
 - **swole**: muscular (slang) or erect (slang) or having very negative feelings
 - **take the gilt of the gingerbread**: to take away the most attractive part
 - **tellurian**: of or relating to the earth and in science fiction, inhabiting
