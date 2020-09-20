@@ -2,6 +2,19 @@
 title: The Morning Paper Notes
 ---
 
+## 2020-09-14: [Aligning superhuman AI with human behaviour: chess as a model system](https://blog.acolyer.org/2020/09/14/aligning-superhuman-ai-with-human-behaviour/)
+
+- we can generate trajectories for learning, good AI coaches for humans are
+  possible
+- in reinforcement learning, system is trained by the inputs from its own
+  actions, not from the labeled data from humans. Otherwise, it might learn to
+  mimic humans and never going over super-human level
+- designing an AI behaving like a human comes with a cost
+- learning trajectories are different between AI and humans. They can come to
+  the same point but following different paths
+- it's feasible to predict what a human would do and so being able to predict
+  their mistakes and coach to improve it or prevent it from happening
+
 ## 2020-03-20: [Serverless in the wild: characterizing and optimising the serverless workload at a large cloud provider](https://blog.acolyer.org/2020/03/20/serverless-in-the-wild/)
 
 - higher cost vs higher quality
