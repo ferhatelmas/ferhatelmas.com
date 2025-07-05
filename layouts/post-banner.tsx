@@ -3,7 +3,6 @@ import type { Blog } from 'contentlayer/generated'
 import type { ReactNode } from 'react'
 import { Banner } from '~/components/blog/banner'
 import { BlogMeta } from '~/components/blog/blog-meta'
-import { Comments } from '~/components/blog/comments'
 import { DiscussOnX } from '~/components/blog/discuss-on-x'
 import { EditOnGithub } from '~/components/blog/edit-on-github'
 import { PostTitle } from '~/components/blog/post-title'
@@ -12,7 +11,6 @@ import { SocialShare } from '~/components/blog/social-share'
 import { TagsList } from '~/components/blog/tags'
 import { Container } from '~/components/ui/container'
 import { SITE_METADATA } from '~/data/site-metadata'
-import type { StatsType } from '~/db/schema'
 import type { CoreContent } from '~/types/data'
 
 interface LayoutProps {
@@ -23,7 +21,17 @@ interface LayoutProps {
 }
 
 export function PostBanner({ content, children }: LayoutProps) {
-  let { slug, type, title, images, date, lastmod, readingTime, tags, filePath } = content
+  let {
+    slug,
+    type,
+    title,
+    images,
+    date,
+    lastmod,
+    readingTime,
+    tags,
+    filePath,
+  } = content
   let postUrl = `${SITE_METADATA.siteUrl}/${type.toLowerCase()}/${slug}`
 
   return (
@@ -39,7 +47,6 @@ export function PostBanner({ content, children }: LayoutProps) {
               <BlogMeta
                 date={date}
                 lastmod={lastmod}
-                type={type.toLowerCase() as StatsType}
                 slug={slug}
                 readingTime={readingTime}
               />
@@ -52,7 +59,9 @@ export function PostBanner({ content, children }: LayoutProps) {
             />
           </div>
         </div>
-        <div className="prose prose-lg dark:prose-invert max-w-none">{children}</div>
+        <div className="prose prose-lg dark:prose-invert max-w-none">
+          {children}
+        </div>
         <div className="space-y-8 border-t border-gray-200 pt-4 dark:border-gray-700">
           <div className="flex justify-between gap-4">
             <div className="flex items-center gap-2">
@@ -62,7 +71,6 @@ export function PostBanner({ content, children }: LayoutProps) {
             </div>
             {/* <SocialShare postUrl={postUrl} title={title} /> */}
           </div>
-          <Comments />
         </div>
       </article>
     </Container>
@@ -81,7 +89,7 @@ function Credit({ image, className }: { image: string; className?: string }) {
           target="_blank"
           rel="noreferrer"
         >
-          <span data-umami-event="banner-author">@{author}</span>
+          <span>@{author}</span>
         </a>{' '}
         on{' '}
         <a
@@ -89,9 +97,8 @@ function Credit({ image, className }: { image: string; className?: string }) {
           href={`https://unsplash.com/photos/${id}`}
           target="_blank"
           rel="noreferrer"
-          data-umami-event="unsplash-link"
         >
-          <span data-umami-event="banner-unsplash">Unsplash</span>
+          <span>Unsplash</span>
         </a>
       </div>
     )

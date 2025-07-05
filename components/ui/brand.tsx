@@ -263,14 +263,15 @@ export function Brand(props: {
     url?: string
   } = BrandsMap[name] || {}
 
-  if (!Icon) return <span className="hidden">Missing brand icon for {name}</span>
+  if (!Icon)
+    return <span className="hidden">Missing brand icon for {name}</span>
 
   if (as === 'icon' || !url) {
     return <Icon className={className} fill="currentColor" />
   }
 
   return (
-    <Link href={`${url}?ref=leohuynh.dev`} className={className}>
+    <Link href={`${url}?ref=ferhatelmas.com`} className={className}>
       <Icon className={iconClassName} fill="currentColor" />
     </Link>
   )

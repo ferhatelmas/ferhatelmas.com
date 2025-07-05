@@ -7,7 +7,13 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": [".contentlayer", ".next", "node_modules"]
+    "ignore": [
+      ".contentlayer",
+      ".next",
+      ".open-next",
+      "node_modules",
+      ".wrangler"
+    ]
   },
   "formatter": {
     "enabled": true,

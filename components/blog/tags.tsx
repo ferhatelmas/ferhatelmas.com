@@ -16,7 +16,10 @@ export function TagsList({ tags }: { tags: string[] }) {
   )
 }
 
-export function Tag({ text, size = 'sm' }: { text: string; size?: 'sm' | 'md' }) {
+export function Tag({
+  text,
+  size = 'sm',
+}: { text: string; size?: 'sm' | 'md' }) {
   let tagName = text.split(' ').join('-')
   return (
     <Link
@@ -28,7 +31,7 @@ export function Tag({ text, size = 'sm' }: { text: string; size?: 'sm' | 'md' })
         size === 'sm' ? 'text-sm' : 'text-base',
       ])}
     >
-      <span data-umami-event={`tag-${tagName}`}>#{tagName}</span>
+      <span>#{tagName}</span>
     </Link>
   )
 }

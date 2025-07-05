@@ -16,16 +16,11 @@ export default function Snippets() {
       <PageHeader
         title="Snippets"
         description={
-          <>
-            <p>
-              My personal stash of code snippets that make my life easier. They’re simple and
-              reusable. Feel free to copy, tweak, and use them as you like.
-            </p>
-            <p className="mt-3 italic">
-              *Some snippets written by me, some are from the internet (Thanks to the open source
-              community).
-            </p>
-          </>
+          <p>
+            My personal stash of code snippets and TIL that make my life easier.
+            They’re simple and reusable. Feel free to copy, tweak, and use them
+            as you like.
+          </p>
         }
         className="border-b border-gray-200 dark:border-gray-700"
       />

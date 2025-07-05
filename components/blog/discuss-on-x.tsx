@@ -7,7 +7,7 @@ export function DiscussOnX({ postUrl }: { postUrl: string }) {
       href={`https://x.com/search?q=${encodeURIComponent(postUrl)}`}
       rel="nofollow"
     >
-      <span data-umami-event="discuss-on-x">
+      <span>
         Discuss on <span className="font-semibold">X</span>
         <span className="hidden font-semibold md:inline"> (Twitter)</span>
       </span>

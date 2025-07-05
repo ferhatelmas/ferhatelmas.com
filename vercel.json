@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/stats/:match*",
-      "destination": "https://analytics.leohuynh.dev/:match*"
-    }
-  ]
-}

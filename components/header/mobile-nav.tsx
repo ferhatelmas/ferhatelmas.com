@@ -1,7 +1,16 @@
 'use client'
 
-import { Dialog, DialogPanel, Transition, TransitionChild } from '@headlessui/react'
-import { clearAllBodyScrollLocks, disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import {
+  Dialog,
+  DialogPanel,
+  Transition,
+  TransitionChild,
+} from '@headlessui/react'
+import {
+  clearAllBodyScrollLocks,
+  disableBodyScroll,
+  enableBodyScroll,
+} from 'body-scroll-lock'
 import { clsx } from 'clsx'
 import { Menu, X } from 'lucide-react'
 import { Fragment, useEffect, useRef, useState } from 'react'
@@ -38,7 +47,6 @@ export function MobileNav() {
           'rounded-sm p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700',
           'flex items-center justify-center sm:hidden',
         ])}
-        data-umami-event="mobile-nav-toggle"
       >
         <button type="button" aria-label="Toggle Menu" onClick={onToggleNav}>
           <Menu size={22} />

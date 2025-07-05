@@ -1,19 +1,23 @@
-const { withContentlayer } = require('next-contentlayer2')
+import { withContentlayer } from 'next-contentlayer2'
+import withBundleAnalyzer from '@next/bundle-analyzer'
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
+// to enable `getCloudflareContext()` in `next dev`
+initOpenNextCloudflareForDev()
+
+const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 })
 
-// You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is *.eleavers.com *.vercel-scripts.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.cloudflare.com;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app *.github.io *.youtube.com;
+  frame-src *.github.io *.youtube.com;
 `
 
 const securityHeaders = [
@@ -61,8 +65,8 @@ const unoptimized = process.env.UNOPTIMIZED ? true : undefined
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
-module.exports = () => {
-  const plugins = [withContentlayer, withBundleAnalyzer]
+export default () => {
+  const plugins = [withContentlayer, bundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
     output,
     basePath,

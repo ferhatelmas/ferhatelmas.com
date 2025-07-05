@@ -2,11 +2,9 @@ import 'css/tailwind.css'
 import 'css/twemoji.css'
 import 'react-medium-image-zoom/dist/styles.css'
 import 'remark-github-blockquote-alert/alert.css'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { JetBrains_Mono, Nunito, Playpen_Sans } from 'next/font/google'
-import { UmamiAnalytics } from '~/components/analytics/umami'
 import { Footer } from '~/components/footer'
 import { Header } from '~/components/header'
 import { KBarSearchProvider } from '~/components/search/kbar-provider'
@@ -95,29 +93,42 @@ export default function RootLayout({
     >
       <link
         rel="apple-touch-icon"
+        type="image/png"
         sizes="76x76"
-        href={`${basePath}/static/favicons/favicon.ico`}
+        href={`${basePath}/static/favicons/apple-touch-icon.png`}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={`${basePath}/static/favicons/favicon.png`}
+        href={`${basePath}/static/favicons/favicon-32x32.png`}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={`${basePath}/static/favicons/favicon.png`}
+        href={`${basePath}/static/favicons/favicon-16x16.png`}
+      />
+      <link
+        rel="android-chrome"
+        type="image/png"
+        sizes="192x192"
+        href={`${basePath}/static/favicons/android-chrome-192x192.png`}
+      />
+      <link
+        rel="android-chrome"
+        type="image/png"
+        sizes="512x512"
+        href={`${basePath}/static/favicons/android-chrome-512x512.png`}
+      />
+      <link
+        rel="icon"
+        sizes="16x16"
+        href={`${basePath}/static/favicons/favicon.ico`}
       />
       <link
         rel="manifest"
         href={`${basePath}/static/favicons/site.webmanifest`}
-      />
-      <link
-        rel="mask-icon"
-        href={`${basePath}/static/favicons/safari-pinned-tab.svg`}
-        color="#5bbad5"
       />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta
@@ -146,16 +157,12 @@ export default function RootLayout({
       >
         <TiltedGridBackground className="inset-x-0 top-0 z-[-1] h-[50vh]" />
         <ThemeProviders>
-          <UmamiAnalytics
-            websiteId={SITE_METADATA.analytics.umamiAnalytics.websiteId}
-          />
           <KBarSearchProvider configs={SITE_METADATA.search.kbarConfigs}>
             <Header />
             <main className="mb-auto grow">{children}</main>
           </KBarSearchProvider>
           <Footer />
         </ThemeProviders>
-        <SpeedInsights />
       </body>
     </html>
   )
