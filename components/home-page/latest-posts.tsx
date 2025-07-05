@@ -29,11 +29,11 @@ export function LatestPosts({
                 'underline-offset-4 transition-colors',
                 view === 'posts'
                   ? 'underline'
-                  : 'text-gray-300 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-200'
+                  : 'text-gray-300 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-200',
               )}
               onClick={() => setView('posts')}
             >
-              <GrowingUnderline data-umami-event="latest-posts">posts</GrowingUnderline>
+              <GrowingUnderline>posts</GrowingUnderline>
             </button>
             <span className="mx-1">/</span>
             <button
@@ -42,17 +42,21 @@ export function LatestPosts({
                 'underline-offset-4 transition-colors',
                 view === 'snippets'
                   ? 'underline'
-                  : 'text-gray-300 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-200'
+                  : 'text-gray-300 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-200',
               )}
               onClick={() => setView('snippets')}
             >
-              <GrowingUnderline data-umami-event="latest-snippets">snippets</GrowingUnderline>
+              <GrowingUnderline>snippets</GrowingUnderline>
             </button>
           </h3>
         </div>
         <div className="flex items-center justify-end text-base leading-6 font-medium">
-          <Link href={view === 'posts' ? '/blog' : '/snippets'} className="" aria-label="All posts">
-            <GrowingUnderline data-umami-event="all-posts">
+          <Link
+            href={view === 'posts' ? '/blog' : '/snippets'}
+            className=""
+            aria-label="All posts"
+          >
+            <GrowingUnderline>
               <span className="hidden md:inline-block">View all {view}</span>
               <span className="md:hidden">More</span> &rarr;
             </GrowingUnderline>
@@ -64,7 +68,10 @@ export function LatestPosts({
           {!posts.length && 'No posts found.'}
           {posts.map((post, idx) => (
             <li key={post.slug}>
-              <PostCardListView post={post} loading={idx === 0 ? 'eager' : 'lazy'} />
+              <PostCardListView
+                post={post}
+                loading={idx === 0 ? 'eager' : 'lazy'}
+              />
             </li>
           ))}
         </ul>

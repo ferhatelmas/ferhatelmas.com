@@ -26,7 +26,7 @@ export function FooterNav() {
       </div>
       <div className="space-y-1 md:space-y-4">
         <div className="flex h-11 items-center font-semibold">
-          <span>Personal stuff</span>
+          <span>Personal Info</span>
         </div>
         <ul className="flex flex-wrap gap-4 md:flex-col md:gap-3">
           {FOOTER_PERSONAL_STUFF.map((link, idx) => (
@@ -50,12 +50,11 @@ function FooterLink({ link }: { link: (typeof FOOTER_NAV_LINKS)[0] }) {
   let isExternal = href.startsWith('http')
   return (
     <Link href={href}>
-      <GrowingUnderline
-        data-umami-event={`footer-nav-${href.replace('/', '')}`}
-        className="inline-flex items-center"
-      >
+      <GrowingUnderline className="inline-flex items-center">
         {title}
-        {isExternal && <ExternalLink className="-mt-1 ml-1.5" size={18} strokeWidth={1.5} />}
+        {isExternal && (
+          <ExternalLink className="-mt-1 ml-1.5" size={18} strokeWidth={1.5} />
+        )}
       </GrowingUnderline>
     </Link>
   )

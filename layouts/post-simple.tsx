@@ -1,8 +1,6 @@
 import type { Blog, Snippet } from 'contentlayer/generated'
 import type { ReactNode } from 'react'
 import { BlogMeta } from '~/components/blog/blog-meta'
-import { Comments } from '~/components/blog/comments'
-import { DiscussOnX } from '~/components/blog/discuss-on-x'
 import { EditOnGithub } from '~/components/blog/edit-on-github'
 import { PostTitle } from '~/components/blog/post-title'
 import { ScrollButtons } from '~/components/blog/scroll-buttons'
@@ -11,7 +9,6 @@ import { TagsList } from '~/components/blog/tags'
 import { Container } from '~/components/ui/container'
 import { GradientDivider } from '~/components/ui/gradient-divider'
 import { SITE_METADATA } from '~/data/site-metadata'
-import type { StatsType } from '~/db/schema'
 import type { CoreContent } from '~/types/data'
 
 interface PostSimpleProps {
@@ -22,7 +19,8 @@ interface PostSimpleProps {
 }
 
 export function PostSimple({ content, children }: PostSimpleProps) {
-  let { slug, date, lastmod, title, type, tags, readingTime, filePath } = content
+  let { slug, date, lastmod, title, type, tags, readingTime, filePath } =
+    content
   let postUrl = `${SITE_METADATA.siteUrl}/${type.toLowerCase()}/${slug}`
 
   return (
@@ -38,7 +36,6 @@ export function PostSimple({ content, children }: PostSimpleProps) {
               <BlogMeta
                 date={date}
                 lastmod={lastmod}
-                type={type.toLowerCase() as StatsType}
                 slug={slug}
                 readingTime={readingTime}
               />
@@ -46,7 +43,9 @@ export function PostSimple({ content, children }: PostSimpleProps) {
           </dl>
         </div>
         <GradientDivider />
-        <div className="prose prose-lg dark:prose-invert max-w-none">{children}</div>
+        <div className="prose prose-lg dark:prose-invert max-w-none">
+          {children}
+        </div>
         <GradientDivider className="mt-1 mb-2" />
         <div className="space-y-8">
           {/* <div className="flex justify-between gap-4">
@@ -57,7 +56,6 @@ export function PostSimple({ content, children }: PostSimpleProps) {
             </div>
             <SocialShare postUrl={postUrl} filePath={filePath} title={title} />
           </div> */}
-          <Comments />
         </div>
       </article>
     </Container>

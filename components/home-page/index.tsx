@@ -1,11 +1,8 @@
 import type { Blog, Snippet } from '~/.contentlayer/generated'
-import type { getRecentlyPlayed } from '~/app/api/spotify/spotify'
 import { ProfileCard } from '~/components/cards/profile'
 import { Container } from '~/components/ui/container'
 import { Twemoji } from '~/components/ui/twemoji'
-import type { SelectBook, SelectMovie } from '~/db/schema'
-import type { CoreContent, GithubUserActivity, RecentlyPlayedData } from '~/types/data'
-import { Activities } from './activities'
+import type { CoreContent } from '~/types/data'
 import { Greeting } from './greeting'
 import { Intro } from './intro'
 import { LatestPosts } from './latest-posts'
@@ -15,17 +12,9 @@ import { TypedBios } from './typed-bios'
 export function Home({
   posts,
   snippets,
-  currentlyReading,
-  lastWatchedMovie,
-  recentlyPlayed,
-  githubActivities,
 }: {
   posts: CoreContent<Blog>[]
   snippets: CoreContent<Snippet>[]
-  currentlyReading: SelectBook | null
-  lastWatchedMovie: SelectMovie | null
-  recentlyPlayed: RecentlyPlayedData
-  githubActivities: GithubUserActivity[]
 }) {
   return (
     <Container as="div" className="space-y-6 pt-4 md:space-y-24 lg:pt-12">
@@ -36,10 +25,10 @@ export function Home({
             <Intro />
             <TypedBios />
             <div className="mt-4 mb-6 md:mb-8">
-              <p>I started learning to code in 2016 and have been hooked ever since.</p>
-              <p>I landed my first job as a Python coding mentor in 2017.</p>
-              <p>I have a passion for JS/TS, web dev, and eCommerce.</p>
-              <p>I started this blog to document and share my knowledge & experience.</p>
+              <p>
+                This blog is to have a common place to document and to share my
+                interest, knowledge & experience.
+              </p>
             </div>
             <BlogLinks />
             <p className="my-6 flex md:my-8">
@@ -53,17 +42,6 @@ export function Home({
         </div>
       </div>
       <LatestPosts posts={posts} snippets={snippets} />
-      <Activities
-        recentlyPlayed={recentlyPlayed}
-        currentlyReading={currentlyReading}
-        lastWatchedMovie={lastWatchedMovie}
-        githubActivities={githubActivities}
-      />
-      {/* {SITE_METADATA.newsletter?.provider && (
-        <div className="flex items-center justify-center py-4 lg:py-10">
-          <NewsletterForm />
-        </div>
-      )} */}
     </Container>
   )
 }

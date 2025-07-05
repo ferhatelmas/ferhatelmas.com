@@ -42,39 +42,22 @@ export function TypedBios() {
     >
       <ul id="bios" className="hidden">
         <li>
-          I'm aliased as <span className="font-medium">Leo</span> at work.
-        </li>
-        <li>I'm a learner, builder, and freedom seeker.</li>
-        <li>I live in Ha Noi, Viet Nam.</li>
-        <li>I was born in the beautiful Moc Chau plateau.</li>
-        <li>My first programming language I learned was Pascal.</li>
-        <li>I love web development.</li>
-        <li>I'm focusing on building eCommerce software.</li>
-        <li>I work mostly with JS/TS technologies.</li>
-        <li>I'm Tu Le's husband.</li>
-        <li>
-          I'm a dog-person. <Twemoji emoji="dog" />
+          I am from Bursa, Turkey <Twemoji emoji="flag-turkey" />
         </li>
         <li>
-          I'm a sport-guy. I love
-          <span className="ml-1">
-            <Twemoji emoji="soccer-ball" />,
-            <Twemoji emoji="man-swimming" />,
-            <Twemoji emoji="ping-pong" />,
-            <Twemoji emoji="volleyball" />
-          </span>
+          I live in Amsterdam, Netherlands <Twemoji emoji="flag-netherlands" />
         </li>
-        <li>I love watching football.</li>
+        <li>I'm a learner, builder and exponential compounder.</li>
+        <li>I focus on distributed storage systems.</li>
+        <li>I pick the language according to the task.</li>
+        <li>I mostly work with Rust, Go, Python and JS/TS.</li>
         <li>
-          I love playing piano & guitar. <Twemoji emoji="musical-keyboard" /> &{' '}
-          <Twemoji emoji="guitar" />
+          I love reading <Twemoji emoji="books" /> and running
+          <Twemoji emoji="man-running" />
         </li>
-        <li>I love rock music.</li>
+        <li>I love downtempo electronic music.</li>
         <li>
           I love playing chess. <Twemoji emoji="chess-pawn" />
-        </li>
-        <li>
-          I love playing video games, PES is my favorite one. <Twemoji emoji="video-game" />.
         </li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />

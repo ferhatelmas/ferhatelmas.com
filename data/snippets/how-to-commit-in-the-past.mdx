@@ -1,0 +1,17 @@
+---
+date: '2023-12-23'
+heading: 'How to control date in a git commit'
+title: 'How to control date in a git commit properly'
+icon: 'Git'
+summary: 'Customize your commit date'
+tags: [git]
+---
+
+Setting `--date` in commit command will set only author date.
+
+To change both commit and author date, `GIT_AUTHOR_DATE` and `GIT_COMMITTER_DATE` environment variables can be used as follows:
+
+```bash
+DESIRED_DATE=$(date -d "-1 day")
+GIT_AUTHOR_DATE=$DESIRED_DATE GIT_COMMITTER_DATE=$DESIRED_DATE git commit -m "Your message"
+```

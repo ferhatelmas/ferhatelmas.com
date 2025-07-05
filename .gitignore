@@ -14,9 +14,11 @@
 
 # next.js
 /.next/
+/.open-next/
 /out/
 public/sitemap.xml
 .vercel
+.wrangler/
 
 # production
 /build
@@ -43,6 +45,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.dev.vars
 
 # Contentlayer
 .contentlayer
