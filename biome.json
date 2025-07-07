@@ -12,7 +12,8 @@
       ".next",
       ".open-next",
       "node_modules",
-      ".wrangler"
+      ".wrangler",
+      "json"
     ]
   },
   "formatter": {
