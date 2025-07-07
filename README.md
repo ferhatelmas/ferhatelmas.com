@@ -42,7 +42,3 @@ TODO: add it later
 ## Fork Status
 
 - This is a fork of [https://www.leohuynh.dev/](https://github.com/hta218/leohuynh.dev) to run on Cloudflare with OpenNext.js and to remove some feature I deem unnecessary. Huge thanks to original authors [Timothy Lin](https://x.com/timlrxx) and [Leo Huynh](https://x.com/hta218_).
-
----
-
-Copyright (c) 2025-present | Ferhat's rabbit hole – art, design, economy, philosophy and technology.
