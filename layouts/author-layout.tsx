@@ -5,9 +5,9 @@ import { ProfileCard } from '~/components/cards/profile'
 import { Button } from '~/components/ui/button'
 import { Container } from '~/components/ui/container'
 import { Image } from '~/components/ui/image'
+import { Link } from '~/components/ui/link'
 import { PageHeader } from '~/components/ui/page-header'
 import { Twemoji } from '~/components/ui/twemoji'
-import { Link } from '~/components/ui/link'
 import { SITE_METADATA } from '~/data/site-metadata'
 
 interface Props {

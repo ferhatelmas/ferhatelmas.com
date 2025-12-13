@@ -1,5 +1,5 @@
-import type { NextRequest } from 'next/server'
 import { getCloudflareContext } from '@opennextjs/cloudflare'
+import type { NextRequest } from 'next/server'
 import { fetchRepoData } from '~/utils/github'
 
 export async function GET(request: NextRequest) {
