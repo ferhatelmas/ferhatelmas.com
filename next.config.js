@@ -1,6 +1,6 @@
-import { withContentlayer } from 'next-contentlayer2'
 import withBundleAnalyzer from '@next/bundle-analyzer'
 import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
+import { withContentlayer } from 'next-contentlayer2'
 
 // to enable `getCloudflareContext()` in `next dev`
 initOpenNextCloudflareForDev()
